@@ -1,4 +1,5 @@
 import React from 'react';
+import './RecipeCard.css';
 
 interface RecipeCardProps {
   recipe: {
@@ -24,7 +25,6 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
         <h3 className="recipe-card-title">{recipe.name}</h3>
         <p className="recipe-card-description">{recipe.description}</p>
         <div className="recipe-card-footer">
-          <button className="recipe-card-like-button">Like</button>
         </div>
       </div>
     </div>

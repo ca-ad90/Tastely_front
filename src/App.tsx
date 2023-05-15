@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import RecipeCard from './components/RecipeCard'
 import MainApp from './components/MainApp'
+import sven from './assets/hidethepainharold.jpg';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,10 +11,10 @@ function App() {
   const recipe = {
     name: 'TEST',
     description: 'This TEST',
-    image: '',
+    image: sven,
     creator: {
       name: 'Sven Svensson',
-      avatar: ''
+      avatar: sven
     }
   }
 
