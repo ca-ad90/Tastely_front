@@ -1,11 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 
-const MainApp = () => {
-  const [recipes, setRecipes] = useState([]);
+interface Recipe {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  creator: {
+    name: string;
+    avatar: string;
+  };
+}
+
+const MainApp: React.FC = () => {
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
 
   useEffect(() => {
-    //Backendkod koppling eventuellt!
     const fetchRecipes = async () => {
       try {
         const response = await fetch('/api/recipes');
@@ -14,7 +24,6 @@ const MainApp = () => {
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
-      console.log(test)
     };
 
     fetchRecipes();
