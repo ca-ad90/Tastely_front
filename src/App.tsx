@@ -7,10 +7,21 @@ import MainApp from './components/MainApp'
 function App() {
   const [count, setCount] = useState(0)
 
+  const recipe = {
+    name: 'TEST',
+    description: 'This TEST',
+    image: '',
+    creator: {
+      name: 'Sven Svensson',
+      avatar: ''
+    }
+  }
+
   return (
     <div className="App">
       <MainApp />
       <div>
+        <RecipeCard recipe={recipe} />
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
