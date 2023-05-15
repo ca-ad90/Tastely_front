@@ -14,6 +14,7 @@ const MainApp = () => {
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
+      console.log(test)
     };
 
     fetchRecipes();
