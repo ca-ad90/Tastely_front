@@ -5,7 +5,7 @@ const MainApp = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    //Backendkod HÄR!
+    //Backendkod koppling eventuellt!
     const fetchRecipes = async () => {
       try {
         const response = await fetch('/api/recipes');
