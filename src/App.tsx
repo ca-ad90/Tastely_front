@@ -4,14 +4,26 @@ import "./App.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import RecipeCard from "./components/RecipeCard";
 import MainApp from "./components/MainApp";
+import sven from "./assets/hidethepainharold.jpg";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const recipe = {
+    name: "TEST",
+    description: "This TEST",
+    image: sven,
+    creator: {
+      name: "Sven Svensson",
+      avatar: sven,
+    },
+  };
 
   return (
     <div className="App">
       <MainApp />
       <div>
+        <RecipeCard recipe={recipe} />
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>

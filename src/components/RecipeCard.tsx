@@ -1,6 +1,19 @@
 import React from 'react';
-//får lägga till backend eventuellt och göra objekten mer konkret
-const RecipeCard = ({ recipe }) => {
+import './RecipeCard.css';
+
+interface RecipeCardProps {
+  recipe: {
+    name: string;
+    description: string;
+    image: string;
+    creator: {
+      name: string;
+      avatar: string;
+    };
+  };
+}
+
+const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   return (
     <div className="recipe-card">
       <div className="recipe-card-header">
@@ -12,7 +25,6 @@ const RecipeCard = ({ recipe }) => {
         <h3 className="recipe-card-title">{recipe.name}</h3>
         <p className="recipe-card-description">{recipe.description}</p>
         <div className="recipe-card-footer">
-          <button className="recipe-card-like-button">Like</button>
         </div>
       </div>
     </div>
@@ -20,4 +32,3 @@ const RecipeCard = ({ recipe }) => {
 };
 
 export default RecipeCard;
-
