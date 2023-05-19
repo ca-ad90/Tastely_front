@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import RecipeCard from './RecipeCard';
+import React, { useEffect, useState } from "react";
+import RecipeCard from "./RecipeCard";
 
 interface Recipe {
   id: number;
@@ -18,11 +18,11 @@ const MainApp: React.FC = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('/api/recipes');
+        const response = await fetch("/api/recipes");
         const data = await response.json();
         setRecipes(data);
       } catch (error) {
-        console.error('Error fetching recipes:', error);
+        console.error("Error fetching recipes:", error);
       }
     };
 
@@ -31,7 +31,6 @@ const MainApp: React.FC = () => {
 
   return (
     <div className="main-app">
-      <h1>Tastely</h1>
       <div className="recipe-cards-container">
         {recipes.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />

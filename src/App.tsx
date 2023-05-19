@@ -7,6 +7,9 @@ import MainApp from "./components/MainApp";
 import sven from "./assets/hidethepainharold.jpg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Profile from "./components/Profile";
+import Upload from "./components/Upload";
+import Discover from "./components/Discover";
+import Saved from "./components/Saved";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +27,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <HamburgerMenu />
         <MainApp />
         <Routes>
           <Route path="/" element={<RecipeCard recipe={recipe} />} />
@@ -31,11 +35,17 @@ function App() {
             path="/profile"
             element={<Profile name={recipe.creator.name} avatar={recipe.creator.avatar} favoriteRecipes={[]} />}
           />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/saved" element={<Saved />} />
         </Routes>
         <div className="top-links">
           <Link to="/profile" className="small-avatar-link">
             <img src={recipe.creator.avatar} className="small-avatar" alt={recipe.creator.name} />
           </Link>
+          <Link to="/upload" className="upload-recipe"></Link>
+          <Link to="/discover" className="discover-recipe"></Link>
+          <Link to="/saved" className="saved-recipe"></Link>
           <a href="https://vitejs.dev/" target="_blank">
             <img src="/vite.svg" className="logo" alt="Vite logo" />
           </a>

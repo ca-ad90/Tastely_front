@@ -4,24 +4,24 @@
     padding: 16px;
     margin-bottom: 16px;
   }
-  
+
   .recipe-card-header {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
   }
-  
+
   .recipe-card-avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-right: 8px;
   }
-  
+
   .recipe-card-creator {
     font-weight: bold;
   }
-  
+
   .recipe-card-image {
     width: 100%;
     height: 200px;
@@ -29,23 +29,23 @@
     margin-bottom: 8px;
     border-radius: 8px;
   }
-  
+
   .recipe-card-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 8px;
   }
-  
+
   .recipe-card-description {
     margin-bottom: 8px;
   }
-  
+
   .recipe-card-footer {
     display: flex;
     justify-content: flex-end;
   }
 
-  
+
   .bookmark-button {
     display: flex;
     align-items: center;
@@ -56,11 +56,11 @@
     padding: 0;
     transition: opacity 0.2s;
   }
-  
+
   .bookmark-button:hover {
     opacity: 0.8;
   }
-  
+
   .bookmark-icon {
     width: 24px;
     height: 24px;
