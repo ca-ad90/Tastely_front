@@ -46,3 +46,23 @@
   }
 
   
+  .bookmark-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .bookmark-button:hover {
+    opacity: 0.8;
+  }
+  
+  .bookmark-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
