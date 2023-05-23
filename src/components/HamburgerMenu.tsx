@@ -52,7 +52,7 @@ const HamburgerMenu: React.FC = () => {
   };
 
   const handleLoginLogoutClick = () => {
-    // Implementera inloggning/utloggning logik här
+    navigate("/login");
     closeMenu();
   };
 
