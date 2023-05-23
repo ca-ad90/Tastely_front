@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faPlus } from "@fortawesome/free-solid-svg-icons";
 import "./HamburgerMenu.css";
@@ -52,13 +52,13 @@ const HamburgerMenu: React.FC = () => {
   };
 
   const handleLoginLogoutClick = () => {
-    // Implementera inloggning/utloggning logik här
+    navigate("/login");
     closeMenu();
   };
 
   return (
     <div className="hamburger-menu">
-      <h1>Tastely</h1>
+      <Link to="/"><h1>Tastely</h1> </Link>
       {isMobileSize && (
         <button className="toggle-button" onClick={toggleMenu}>
           {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}

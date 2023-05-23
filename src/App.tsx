@@ -11,6 +11,8 @@ import Upload from "./components/Upload";
 import Discover from "./components/Discover";
 import Saved from "./components/Saved";
 import LandingPage from "./components/LandingPage";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,6 +42,8 @@ function App() {
           <Route path="/upload" element={<Upload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<Saved />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <div className="top-links">
           <Link to="/profile" className="small-avatar-link">
@@ -48,6 +52,7 @@ function App() {
           <Link to="/upload" className="upload-recipe"></Link>
           <Link to="/discover" className="discover-recipe"></Link>
           <Link to="/saved" className="saved-recipe"></Link>
+          <Link to="/login" className="login-link"></Link>
           <a href="https://vitejs.dev/" target="_blank">
             <img src="/vite.svg" className="logo" alt="Vite logo" />
           </a>
