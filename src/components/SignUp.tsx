@@ -11,6 +11,10 @@ const SignUp: React.FC = () => {
     setName(e.target.value);
   };
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
@@ -27,6 +31,7 @@ const SignUp: React.FC = () => {
   const handleRegisterClick = () => {
     setShowRegistration(true);
   };
+  
 
   return (
     <div className="signup-container">
@@ -65,6 +70,19 @@ const SignUp: React.FC = () => {
               />
             </div>
             <div className="form-group">
+              <label htmlFor="name" className="form-label">
+                Phone number
+              </label>
+              <input
+                type="text"
+                id="phone"
+                className="form-input"
+                value={name}
+                onChange={handlePhoneChange}
+                required
+              />
+            </div>
+            <div className="form-group">
               <label htmlFor="email" className="form-label">
                 Email
               </label>
@@ -80,6 +98,19 @@ const SignUp: React.FC = () => {
             <div className="form-group">
               <label htmlFor="password" className="form-label">
                 Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                className="form-input"
+                value={password}
+                onChange={handlePasswordChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password" className="form-label">
+                Confirm Password
               </label>
               <input
                 type="password"
