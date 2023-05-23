@@ -10,6 +10,7 @@ import Profile from "./components/Profile";
 import Upload from "./components/Upload";
 import Discover from "./components/Discover";
 import Saved from "./components/Saved";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
     <Router>
       <div className="App">
         <HamburgerMenu />
+        <LandingPage />
         <MainApp />
         <Routes>
           <Route path="/" element={<RecipeCard recipe={recipe} />} />
