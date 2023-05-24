@@ -1,0 +1,95 @@
+.carousel {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(174, 199, 159, 0.37);
+
+  }
+
+  .slides {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide .content {
+    padding: 10px;
+  }
+
+  .carousel h2 {
+    font-size: 28px;
+  }
+
+  .carousel p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .carousel .description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .carousel a.prev,
+  .carousel a.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 100;
+    color: #292D32;
+    text-decoration: none;
+    background: rgba(238, 238, 238, 0.7);
+    width: 51.25px;
+    height: 51.25px;
+    border-radius: 100px;
+  }
+
+  .carousel a.prev {
+    left: 10px;
+  }
+
+  .carousel a.next {
+    right: 10px;
+  }
+
+  .carousel .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .carousel .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+
+  .carousel .dot.active {
+    background-color: #000;
+  }
