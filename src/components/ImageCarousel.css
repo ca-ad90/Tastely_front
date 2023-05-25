@@ -64,14 +64,21 @@
     width: 51.25px;
     height: 51.25px;
     border-radius: 100px;
+    cursor: pointer;
   }
 
   .carousel a.prev {
     left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .carousel a.next {
     right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .carousel .dots {
