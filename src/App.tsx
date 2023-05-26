@@ -13,11 +13,13 @@ import Saved from "./components/Saved";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import RecipePage from "./components/RecipePage";
 
 function App() {
   const [count, setCount] = useState(0);
 
   const recipe = {
+    id: '1',
     name: "TEST",
     description: "This TEST",
     image: sven,
@@ -25,13 +27,17 @@ function App() {
       name: "Sven Svensson",
       avatar: sven,
     },
+    servings: 4,
+    cookTime: 30,
+    ingredients: ['Ingredient 1', 'Ingredient 2', 'Ingredient 3'],
+    instructions: ['Step 1: Do this', 'Step 2: Do that', 'Step 3: Finally, do this'],
   };
 
   return (
     <Router>
       <div className="App">
         <HamburgerMenu />
-        <LandingPage />
+        {/* <LandingPage /> */}
         <MainApp />
         <Routes>
           <Route path="/" element={<RecipeCard recipe={recipe} />} />
@@ -39,6 +45,7 @@ function App() {
             path="/profile"
             element={<Profile name={recipe.creator.name} avatar={recipe.creator.avatar} favoriteRecipes={[]} />}
           />
+          <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<Saved />} />

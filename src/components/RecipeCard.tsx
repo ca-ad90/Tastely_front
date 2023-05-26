@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './RecipeCard.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import bookmarkIcon from '../assets/bookmark-icon.svg';
 
 interface RecipeCardProps {
   recipe: {
+    id: string;
     name: string;
     description: string;
     image: string;
@@ -17,18 +18,22 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const navigate = useNavigate();
 
   const handleBookmarkToggle = () => {
     setIsBookmarked((prevIsBookmarked) => !prevIsBookmarked);
   };
 
-  return (
-    <div className="recipe-card">
-      <div className="recipe-card-header">
-      <Link to="/profile">
-  <img className="recipe-card-avatar" src={recipe.creator.avatar} alt={recipe.creator.name} />
-</Link>
+  const handleClick = () => {
+    navigate(`/recipe/${recipe.id}`);
+  };
 
+  return (
+    <div className="recipe-card" onClick={handleClick}>
+      <div className="recipe-card-header">
+        <Link to="/profile">
+          <img className="recipe-card-avatar" src={recipe.creator.avatar} alt={recipe.creator.name} />
+        </Link>
         <span className="recipe-card-creator">{recipe.creator.name}</span>
       </div>
       <div className="recipe-card-content">
