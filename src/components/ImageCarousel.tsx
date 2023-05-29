@@ -8,7 +8,7 @@ const ImageCarousel = () => {
 
   const slides = [
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/pexels-photo-by-anna-tarazevich@2x.png",
@@ -17,7 +17,7 @@ const ImageCarousel = () => {
         "Hey there, I'm Malik! Join me on a culinary adventure, let's explore flavors, create delicious recipes, and unlock the wonders of the culinary world together.",
     },
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/mark@2x.png",
@@ -26,7 +26,7 @@ const ImageCarousel = () => {
         "Welcome to the savory side of cooking! I'm Mark, your flavor and technique guide. Let's unravel culinary secrets and dive into food science!",
     },
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/filippoon@2x.png",
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
         "I´m Filip, a foodfluencer from Youtube and TikTok. Happy to be a part of the Tastely Community, where future chefs are born!",
     },
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/pexels-photo-by-karolina-grabowska@2x.png",
@@ -44,7 +44,7 @@ const ImageCarousel = () => {
         "Hey, foodies! I'm Emily, join me on a journey of mindful eating and wholesome ingredients. Let's create a healthier version of ourselves through food!",
     },
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/pexels-photo-by-rdne-stock-project@2x.png",
@@ -53,7 +53,7 @@ const ImageCarousel = () => {
         "Fire up those grills with grill master Carlos! Join me as we sizzle through lots of BBQ recipes, from juicy steaks to smoky ribs.",
     },
     {
-      heading: "Meet our creators",
+      heading: "Meet Our Creators",
       description:
         "Meet our community of food enthusiasts, from kitchen newbies to passionate home cooks from across the globe",
       image: "/public/pexels-photo-by-polina-tankilevitch@2x.png",

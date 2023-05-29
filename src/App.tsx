@@ -13,6 +13,7 @@ import Saved from "./components/Saved";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import MainPage from "./components/MainPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +45,7 @@ function App() {
           <Route path="/saved" element={<Saved />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/mainpage" element={<MainPage />} />
         </Routes>
         <div className="top-links">
           <Link to="/profile" className="small-avatar-link">

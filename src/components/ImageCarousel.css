@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(174, 199, 159, 0.37);
-
   }
 
   .slides {
@@ -33,22 +32,26 @@
 
   .slide .content {
     padding: 10px;
+    color: #3B3B3B;
   }
 
   .carousel h2 {
     font-size: 28px;
+    color: #3B3B3B;
   }
 
   .carousel p {
     font-size: 16px;
     font-weight: 400;
     margin-top: 10px;
+    color: #3B3B3B;
   }
 
   .carousel .description {
     font-size: 16px;
     font-weight: 400;
     margin-top: 10px;
+    color: #3B3B3B;
   }
 
   .carousel a.prev,
@@ -89,8 +92,8 @@
   }
 
   .carousel .dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #ccc;
     margin: 0 4px;
@@ -98,5 +101,5 @@
   }
 
   .carousel .dot.active {
-    background-color: #000;
+    background-color: #888888
   }
