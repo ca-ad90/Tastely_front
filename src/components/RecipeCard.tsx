@@ -25,7 +25,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   };
 
   const handleClick = () => {
-    navigate(`/recipe/${recipe.id}`);
+    navigate(`/recipes/${recipe.id}`);
   };
 
   const handleUploadClick = () => {

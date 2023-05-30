@@ -58,7 +58,7 @@ function App() {
           <Link to="/profile" className="small-avatar-link">
             <img src={recipe.creator.avatar} className="small-avatar" alt={recipe.creator.name} />
           </Link>
-          <Link to="/upload" className="upload-recipe"></Link>
+          {/* <Link to="/upload" className="upload-recipe"></Link> */}
           <Link to="/discover" className="discover-recipe"></Link>
           <Link to="/saved" className="saved-recipe"></Link>
           <Link to="/login" className="login-link"></Link>
