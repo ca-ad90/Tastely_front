@@ -28,6 +28,10 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
     navigate(`/recipe/${recipe.id}`);
   };
 
+  const handleUploadClick = () => {
+    navigate('/upload');
+  };
+
   return (
     <div className="recipe-card" onClick={handleClick}>
       <div className="recipe-card-header">
@@ -45,6 +49,9 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
       <button className={`bookmark-button ${isBookmarked ? 'bookmarked' : ''}`} onClick={handleBookmarkToggle}>
         <img className="bookmark-icon" src={bookmarkIcon} alt="Bookmark" />
         {isBookmarked ? 'Bookmarked' : 'Bookmark'}
+      </button>
+      <button className="upload-button" onClick={handleUploadClick}>
+        Upload Recipe
       </button>
     </div>
   );
