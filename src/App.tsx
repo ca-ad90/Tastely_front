@@ -46,9 +46,9 @@ function App() {
           <Route path="/" element={<LandingPageTablet />} />
           <Route path="/mainapp" element={<MainApp />} />
           <Route
-            path="/profile"
-            element={<Profile name={recipe.creator.name} avatar={recipe.creator.avatar} favoriteRecipes={[]} />}
-          />
+  path="/profile"
+  element={<Profile user={{ name: recipe.creator.name, avatar: recipe.creator.avatar, favoriteRecipes: [] }} />}
+/>
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
           <Route path="/upload" element={<RecipeUpload />} />
           <Route path="/discover" element={<Discover />} />
