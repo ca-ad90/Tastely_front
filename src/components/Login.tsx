@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loginStatus, setLoginStatus] = useState('');
+
   const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,9 +18,22 @@ const Login: React.FC = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login submitted:', email, password);
+
+    try {
+      const response = await axios.post('http://localhost:8080/login', {
+        email,
+        password,
+      });
+
+      console.log('User logged in:', response.data);
+      setLoginStatus('success');
+      navigate('/profile');
+    } catch (error) {
+      console.error('Error logging in:', error);
+      setLoginStatus('failure');
+    }
   };
 
   const handleSignUpClick = () => {
@@ -74,6 +90,8 @@ const Login: React.FC = () => {
           </div>
         </div>
       </div>
+      {loginStatus === 'success' && <p>Login successful!</p>}
+      {loginStatus === 'failure' && <p>Login failed. Please try again.</p>}
     </div>
   );
 };

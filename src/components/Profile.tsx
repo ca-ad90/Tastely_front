@@ -1,17 +1,23 @@
 import React from 'react';
 import './Profile.css';
 
-interface ProfileProps {
+interface Recipe {
   name: string;
-  avatar: string;
-  favoriteRecipes: {
-    name: string;
-    description: string;
-    image: string;
-  }[];
+  description: string;
+  image: string;
 }
 
-const Profile: React.FC<ProfileProps> = ({ name, avatar, favoriteRecipes }) => {
+interface ProfileProps {
+  user: {
+    name: string;
+    avatar: string;
+    favoriteRecipes: Recipe[];
+  };
+}
+
+const Profile: React.FC<ProfileProps> = ({ user }) => {
+  const { name, avatar, favoriteRecipes } = user;
+
   return (
     <div className="profile">
       <div className="profile-header">
