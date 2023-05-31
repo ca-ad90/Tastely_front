@@ -30,9 +30,6 @@ const SignUp: React.FC = () => {
       });
 
       console.log('User registered:', response.data);
-      // Optionally, you can redirect the user to another page after successful registration
-      // For example, you can use the `useHistory` hook from react-router-dom
-      // history.push('/login');
     } catch (error) {
       console.error('Error registering user:', error);
     }
