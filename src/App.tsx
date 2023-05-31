@@ -8,7 +8,7 @@ import MainApp from "./components/MainApp";
 import sven from "./assets/hidethepainharold.jpg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Profile from "./components/Profile";
-import Upload from "./components/Upload";
+import RecipeUpload from "./components/RecipeUpload";
 import Discover from "./components/Discover";
 import Saved from "./components/Saved";
 import LandingPage from "./components/LandingPage";
@@ -50,7 +50,7 @@ function App() {
             element={<Profile name={recipe.creator.name} avatar={recipe.creator.avatar} favoriteRecipes={[]} />}
           />
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
-          <Route path="/upload" element={<Upload />} />
+          <Route path="/upload" element={<RecipeUpload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/login" element={<Login />} />
@@ -62,16 +62,16 @@ function App() {
           <Link to="/profile" className="small-avatar-link">
             <img src={recipe.creator.avatar} className="small-avatar" alt={recipe.creator.name} />
           </Link>
-          <Link to="/upload" className="upload-recipe"></Link>
+          {/* <Link to="/upload" className="upload-recipe"></Link> */}
           <Link to="/discover" className="discover-recipe"></Link>
           <Link to="/saved" className="saved-recipe"></Link>
         </div>
 
         <Link to="/login" className="login-link"></Link>
-        {/* <a href="https://vitejs.dev/" target="_blank">
+        {/* <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
             <img src="/vite.svg" className="logo" alt="Vite logo" />
           </a>
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
