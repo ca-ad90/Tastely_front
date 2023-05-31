@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+div.App {
+  width: 100%;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -37,8 +42,9 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: white;
 }
+
 .small-avatar-link {
   display: inline-block;
   margin-top: 10px;
@@ -52,4 +58,3 @@
 .top-links img.small-avatar {
   display: none;
 }
-

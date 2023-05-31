@@ -1,0 +1,54 @@
+.looptroopAHappyRobotLookinIcon {
+    position: relative;
+    border-radius: 12px;
+    width: 327px;
+    height: 234px;
+    object-fit: cover;
+  }
+  .h3Seamless {
+    position: relative;
+    line-height: 28px;
+  }
+  .h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourAiSystem {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 327px;
+  }
+  .ourAiSystemUtilizesAdvanceWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .h3Parent,
+  .privacyAndSecuritySectionT,
+  .section4LandingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .privacyAndSecuritySectionT,
+  .section4LandingPage {
+    gap: 25px;
+  }
+  .section4LandingPage {
+    height: 546px;
+    gap: 20px;
+    text-align: left;
+    font-size: 22px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

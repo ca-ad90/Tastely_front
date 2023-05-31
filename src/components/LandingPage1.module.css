@@ -1,0 +1,563 @@
+.tastely {
+    position: relative;
+    font-weight: 500;
+  }
+  .h1,
+  .h1BrandName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .h1 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .h21 {
+    position: relative;
+    line-height: 28px;
+    font-weight: 600;
+    display: inline-block;
+    width: 277px;
+    flex-shrink: 0;
+  }
+  .h1H2,
+  .h2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .h2 {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 26px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }
+  .h1H2 {
+    position: absolute;
+    top: 0;
+    left: 39px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .h31 {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 303px;
+    flex-shrink: 0;
+  }
+  .h1H2H3P2,
+  .h3 {
+    position: absolute;
+  }
+  .h3 {
+    top: 202px;
+    left: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }
+  .h1H2H3P2 {
+    top: calc(50% - 2018px);
+    left: calc(50% - 177px);
+    width: 355px;
+    height: 376px;
+    font-size: 64px;
+    color: #f16e00;
+    font-family: Chillax;
+  }
+  .button1 {
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  .button {
+    border-radius: 30px;
+    background-color: #f16e00;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .p2Button,
+  .registerButton {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .registerButton {
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+  }
+  .p2Button {
+    position: absolute;
+    top: 583px;
+    left: 61px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .shape1Icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 293.66px;
+  }
+  .shape2Icon,
+  .vectorPlate {
+    position: absolute;
+    top: -1014px;
+    left: -80.25px;
+    width: 579.49px;
+    height: 579.79px;
+  }
+  .vectorPlate {
+    top: 0;
+    left: 195px;
+    width: 195px;
+    height: 264.31px;
+    object-fit: cover;
+  }
+  .p3Already {
+    position: relative;
+    line-height: 20px;
+  }
+  .button2 {
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #f16e00;
+    box-sizing: border-box;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .p3SignInButton,
+  .signUpButton {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .signUpButton {
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 16px;
+    color: #f16e00;
+  }
+  .p3SignInButton {
+    position: absolute;
+    top: 683px;
+    left: 57px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .groupChild,
+  .pexelsPhotoByFauxels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13.5px;
+    width: 270.75px;
+    height: 262.5px;
+  }
+  .pexelsPhotoByFauxels {
+    object-fit: cover;
+  }
+  .groupChild {
+    background-color: rgba(241, 110, 0, 0.08);
+  }
+  .pexelsPhotoByFauxelsParent {
+    position: relative;
+    width: 270.75px;
+    height: 262.5px;
+  }
+  .h3Seamless {
+    position: relative;
+    line-height: 28px;
+    display: inline-block;
+    width: 284px;
+    flex-shrink: 0;
+  }
+  .h32 {
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .captureMouthwateringPictures {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 270px;
+  }
+  .captureMouthwateringPicturesWrapper {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .h3Parent,
+  .section3LandingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .h3Parent {
+    width: 270px;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .section3LandingPage {
+    align-items: center;
+    gap: 20px;
+  }
+  .dotsMeetOurCreators {
+    position: absolute;
+    top: 594.5px;
+    left: 133px;
+    width: 110px;
+    height: 47.5px;
+  }
+  .meetOurCreators {
+    position: relative;
+    line-height: 28px;
+  }
+  .meetOurCommunity {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Roboto;
+    text-align: center;
+    display: inline-block;
+    width: 327px;
+  }
+  .h3MeetOurCreators {
+    position: absolute;
+    top: calc(50% - 301px);
+    left: calc(50% - 163.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .phoneBackgroundMeetOur {
+    position: relative;
+    background-color: rgba(174, 199, 159, 0.37);
+    width: 395px;
+    height: 642px;
+    overflow-x: auto;
+    flex-shrink: 0;
+  }
+  .landingPageSections {
+    position: absolute;
+    top: 824px;
+    left: -3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+    font-size: 22px;
+    font-family: Nunito;
+  }
+  .joinTastelyToday1 {
+    position: relative;
+    line-height: 28px;
+    display: inline-block;
+    width: 273px;
+  }
+  .signUpNowAndEmbarkOnACuWrapper {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .section5LandingPageInner {
+    align-items: flex-start;
+  }
+  .joinTastelyToday,
+  .section5LandingPage,
+  .section5LandingPageInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .section5LandingPage {
+    width: 270px;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }
+  .joinTastelyToday {
+    position: absolute;
+    top: 3945px;
+    left: 70px;
+    align-items: center;
+    gap: 7px;
+    font-size: 26px;
+    color: #f16e00;
+    font-family: Nunito;
+  }
+  .image7Icon,
+  .skrmbild202305161433462 {
+    position: absolute;
+    top: 0;
+    left: 64.86px;
+    width: 205.14px;
+    height: 260.25px;
+    object-fit: cover;
+  }
+  .image7Icon {
+    top: 35.49px;
+    left: 0;
+    width: 115.61px;
+    height: 224.76px;
+  }
+  .skrmbild202305161433462Parent {
+    position: absolute;
+    top: 3661px;
+    left: 62px;
+    width: 270px;
+    height: 260.25px;
+  }
+  .landingPageMobileChild {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 390px;
+    height: 344px;
+  }
+  .button4,
+  .registerButton1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .button4 {
+    border-radius: 30px;
+    background-color: #f16e00;
+    width: 270px;
+    height: 50px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .registerButton1 {
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .p2Button1,
+  .p3SignInButton1 {
+    position: absolute;
+    top: 4130px;
+    left: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    color: #fff;
+  }
+  .p3SignInButton1 {
+    top: 4204px;
+    color: #f16e00;
+  }
+  .groupItem,
+  .pexelsPhotoByAnnaTarazevic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13.5px;
+    width: 176px;
+    height: 221px;
+  }
+  .pexelsPhotoByAnnaTarazevic {
+    object-fit: cover;
+  }
+  .groupItem {
+    background-color: rgba(241, 110, 0, 0.08);
+  }
+  .pexelsPhotoByAnnaTarazevicParent {
+    position: relative;
+    width: 176px;
+    height: 221px;
+  }
+  .kitchenexplorermalikInner,
+  .kitchenexplorermalikWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 0;
+  }
+  .kitchenexplorermalikWrapper {
+    z-index: 1;
+  }
+  .heyThereIm {
+    position: relative;
+    line-height: 25px;
+    display: inline-block;
+    width: 176px;
+    z-index: 2;
+  }
+  .buttonBackArrowTablet {
+    position: absolute;
+    margin: 0 !important;
+    top: calc(50% - 144px);
+    left: 0;
+    width: 51.25px;
+    height: 51.25px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .kitchenexplorermalik {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 94px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 10px;
+    z-index: 0;
+  }
+  .markIcon,
+  .markParent {
+    width: 176.25px;
+    height: 221.25px;
+  }
+  .markIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13.5px;
+    object-fit: cover;
+  }
+  .markParent {
+    position: relative;
+  }
+  .welcomeToThe {
+    position: relative;
+    line-height: 25px;
+    display: inline-block;
+    width: 176px;
+  }
+  .savorysciencemark1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .savorysciencemark {
+    gap: 10px;
+    z-index: 1;
+  }
+  .filippoon,
+  .savorysciencemark,
+  .wholesomechefemily {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .filippoon {
+    gap: 10px;
+    z-index: 2;
+  }
+  .wholesomechefemily {
+    z-index: 3;
+  }
+  .groupChild2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13.5px;
+    background-color: rgba(241, 110, 0, 0.08);
+    box-shadow: 4.5px 7.5px 15.75px rgba(0, 0, 0, 0.1);
+    width: 176px;
+    height: 221px;
+  }
+  .grillmastercarlos,
+  .sweettoothmia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 4;
+  }
+  .sweettoothmia {
+    z-index: 5;
+  }
+  .buttonBackArrowTablet1 {
+    position: absolute;
+    margin: 0 !important;
+    top: 73px;
+    left: 308px;
+    width: 51.25px;
+    height: 51.25px;
+    cursor: pointer;
+    z-index: 6;
+  }
+  .meetourcreatorsCards {
+    position: absolute;
+    top: 2453px;
+    left: 15px;
+    width: 1799px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 116px;
+  }
+  .landingPageMobile {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 4470px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }

@@ -1,0 +1,111 @@
+.imageIcon {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .asyHomemadePizza {
+    font-size: 16px;
+  }
+  .nameOfTheContainer {
+    flex: 1;
+    position: relative;
+    line-height: 20px;
+  }
+  .clockIcon,
+  .time1 {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .clockIcon {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .time1 {
+    line-height: 20px;
+    display: inline-block;
+    width: 43px;
+    height: 15px;
+  }
+  .heading,
+  .time {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .time {
+    text-align: center;
+  }
+  .heading {
+    width: 267px;
+    z-index: 0;
+  }
+  .by {
+    position: relative;
+    line-height: 20px;
+    color: #656565;
+    display: inline-block;
+    width: 267px;
+    z-index: 1;
+  }
+  .cardDetailsChild {
+    position: absolute;
+    margin: 0 !important;
+    top: 17px;
+    left: 16px;
+    width: 43px;
+    height: 43px;
+    z-index: 2;
+  }
+  .cardDetails {
+    border-radius: 0 0 12px 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 358px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 16px 75px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 3px;
+    z-index: 1;
+  }
+  .bookmarkIcon {
+    position: absolute;
+    margin: 0 !important;
+    top: 15px;
+    right: 15px;
+    width: 41px;
+    height: 41px;
+    z-index: 2;
+  }
+  .card5 {
+    border-radius: 12px;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    width: 358px;
+    height: 284px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    z-index: 4;
+    text-align: left;
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }

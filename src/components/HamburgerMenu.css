@@ -6,22 +6,23 @@
     display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  left: 145px;
+  left: 130px;
+  z-index: 3;
   }
 
   .hamburger-menu h1 {
     position: absolute;
-    top: -30px;
-   left: -170px;
+    top: 33px;
+   left: -117px;
     color: #f16e00;
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 500;
   }
 
   .toggle-button {
     position: absolute;
-    top: 0;
-    right: 130px;
+    top: 20px;
+    right: 160px;
     background: none;
     border: none;
     cursor: pointer;
@@ -34,8 +35,8 @@
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    top: 38px;
-    right: 180px;
+    top: 50px;
+    right: 320px;
     width: 60%;
     height: 38vh;
     background-color: transparent;

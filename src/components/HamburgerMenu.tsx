@@ -11,10 +11,10 @@ const HamburgerMenu: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileSize(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobileSize(window.innerWidth <= 768); //
     };
 
-    handleResize(); // Check initial screen size
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
@@ -57,45 +57,49 @@ const HamburgerMenu: React.FC = () => {
   };
 
   return (
-    <div className="hamburger-menu">
-      <Link to="/"><h1>Tastely</h1> </Link>
-      {isMobileSize && (
-        <button className="toggle-button" onClick={toggleMenu}>
-          {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
-        </button>
-      )}
+    <>
+      <div className="hamburger-menu">
+        <Link to="/">
+          <h1>Tastely</h1>{" "}
+        </Link>
+        {isMobileSize && (
+          <button className="toggle-button" onClick={toggleMenu}>
+            {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+          </button>
+        )}
 
-      {(isMobileSize && isOpen) || !isMobileSize ? (
-        <div className="hamburger-icon">
-          <div className="menu-box-upload">
-            <button className="upload-button" onClick={handleUploadClick}>
-              <h2>Upload</h2>
-              <FontAwesomeIcon icon={faPlus} />
-            </button>
+        {(isMobileSize && isOpen) || !isMobileSize ? (
+          <div className="hamburger-icon">
+            <div className="menu-box-upload">
+              <button className="upload-button" onClick={handleUploadClick}>
+                <h2>Upload</h2>
+                <FontAwesomeIcon icon={faPlus} />
+              </button>
+            </div>
+            <div className="menu-box-discover">
+              <button className="discover-button" onClick={handleDiscoverClick}>
+                <h2>Discover</h2>
+              </button>
+            </div>
+            <div className="menu-box-saved">
+              <button className="saved-button" onClick={handleSavedClick}>
+                <h2>Saved</h2>
+              </button>
+            </div>
+            <div className="menu-box-myprofile">
+              <button className="myprofile-button" onClick={handleProfileClick}>
+                <h2>My Profile</h2>
+              </button>
+            </div>
+            <div className="menu-box-login-logout">
+              <button className="login-logout-button" onClick={handleLoginLogoutClick}>
+                <h2>Login/Logout</h2>
+              </button>
+            </div>
           </div>
-          <div className="menu-box-discover">
-            <button className="discover-button" onClick={handleDiscoverClick}>
-              <h2>Discover</h2>
-            </button>
-          </div>
-          <div className="menu-box-saved">
-            <button className="saved-button" onClick={handleSavedClick}>
-              <h2>Saved</h2>
-            </button>
-          </div>
-          <div className="menu-box-myprofile">
-            <button className="myprofile-button" onClick={handleProfileClick}>
-              <h2>My Profile</h2>
-            </button>
-          </div>
-          <div className="menu-box-login-logout">
-            <button className="login-logout-button" onClick={handleLoginLogoutClick}>
-              <h2>Login/Logout</h2>
-            </button>
-          </div>
-        </div>
-      ) : null}
-    </div>
+        ) : null}
+      </div>
+    </>
   );
 };
 

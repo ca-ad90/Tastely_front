@@ -1,0 +1,50 @@
+.groupChild,
+.markIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  width: 235px;
+  height: 295px;
+}
+.markIcon {
+  object-fit: cover;
+}
+.groupChild {
+  background-color: rgba(241, 110, 0, 0.08);
+}
+.markParent {
+  position: relative;
+  width: 235px;
+  height: 295px;
+}
+.savorysciencemark2 {
+  position: relative;
+  line-height: 20px;
+}
+.savorysciencemarkWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.welcomeToThe {
+  position: relative;
+  line-height: 25px;
+  display: inline-block;
+  width: 235px;
+}
+.savorysciencemark,
+.savorysciencemark1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.savorysciencemark {
+  text-align: left;
+  font-size: 16px;
+  color: #3b3b3b;
+  font-family: Roboto;
+}

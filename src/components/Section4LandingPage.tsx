@@ -1,10 +1,10 @@
 import { FunctionComponent, useMemo } from "react";
 import CSS, { Property } from "csstype";
+import styles from "./Section4LandingPage.module.css";
 
 type Section4LandingPageType = {
   looptroopAHappyRobotLooki?: string;
 
-  /** Style props */
   propAlignItems?: Property.AlignItems;
   propWidth?: Property.Width;
   propHeight?: Property.Height;
@@ -49,37 +49,25 @@ const Section4LandingPage: FunctionComponent<Section4LandingPageType> = ({
   }, [propTextAlign, propWidth1]);
 
   return (
-    <div
-      className="h-[546px] flex flex-col items-center justify-start gap-[20px] text-left text-3xl text-neutrals-neutral-black font-h1"
-      style={section4LandingPageStyle}
-    >
+    <div className={styles.section4LandingPage} style={section4LandingPageStyle}>
       <img
-        className="relative rounded-xl w-[327px] h-[234px] object-cover"
+        className={styles.looptroopAHappyRobotLookinIcon}
         alt=""
         src={looptroopAHappyRobotLooki}
         style={looptroopAHappyRobotLookinIconStyle}
       />
-      <div className="flex flex-col items-center justify-start gap-[25px]">
-        <div
-          className="flex flex-col items-center justify-start gap-[7px]"
-          style={frameDivStyle}
-        >
-          <div className="flex flex-row items-center justify-center">
-            <b className="relative leading-[28px]">{`Privacy and security `}</b>
+      <div className={styles.privacyAndSecuritySectionT}>
+        <div className={styles.h3Parent} style={frameDivStyle}>
+          <div className={styles.h3}>
+            <b className={styles.h3Seamless}>{`Privacy and security `}</b>
           </div>
-          <div className="flex flex-col pt-[5px] px-0 pb-0 items-center justify-center text-center text-base font-p1">
-            <div
-              className="relative leading-[20px] inline-block w-[327px]"
-              style={ourAISystemStyle}
-            >
-              Our AI system utilizes advanced image recognition algorithms to
-              identify and flag inappropriate or offensive uploads, covering a
-              wide range of content. It offers real-time monitoring, scanning
-              contributions to promptly detect potential violations, ensuring
-              users can browse and share recipes without encountering offensive
-              content. We also value community input through our ticket system,
-              allowing users to report objectionable content and contribute to
-              further AI training, fostering a safe community for all.
+          <div className={styles.ourAiSystemUtilizesAdvanceWrapper}>
+            <div className={styles.ourAiSystem} style={ourAISystemStyle}>
+              Our AI system utilizes advanced image recognition algorithms to identify and flag inappropriate or
+              offensive uploads, covering a wide range of content. It offers real-time monitoring, scanning
+              contributions to promptly detect potential violations, ensuring users can browse and share recipes without
+              encountering offensive content. We also value community input through our ticket system, allowing users to
+              report objectionable content and contribute to further AI training, fostering a safe community for all.
             </div>
           </div>
         </div>

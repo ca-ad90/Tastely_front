@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import "./index.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import RecipeCard from "./components/RecipeCard";
 import MainApp from "./components/MainApp";
@@ -11,9 +12,11 @@ import Upload from "./components/Upload";
 import Discover from "./components/Discover";
 import Saved from "./components/Saved";
 import LandingPage from "./components/LandingPage";
+import LandingPageTablet from "./components/LandingPageTablet";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import MainPage from "./components/MainPage";
+import MainPageTablet from "./components/MainPageTablet";
 import RecipePage from "./components/RecipePage";
 
 function App() {
@@ -37,11 +40,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <HamburgerMenu />
-        {/* <LandingPage /> */}
-        <MainApp />
+        {/* <HamburgerMenu /> */}
         <Routes>
-          <Route path="/" element={<RecipeCard recipe={recipe} />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPageTablet />} />
+          <Route path="/mainapp" element={<MainApp />} />
           <Route
             path="/profile"
             element={<Profile name={recipe.creator.name} avatar={recipe.creator.avatar} favoriteRecipes={[]} />}
@@ -53,6 +56,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/mainpage" element={<MainPage />} />
+          <Route path="/mainpage" element={<MainPageTablet />} />
         </Routes>
         <div className="top-links">
           <Link to="/profile" className="small-avatar-link">
@@ -61,8 +65,10 @@ function App() {
           <Link to="/upload" className="upload-recipe"></Link>
           <Link to="/discover" className="discover-recipe"></Link>
           <Link to="/saved" className="saved-recipe"></Link>
-          <Link to="/login" className="login-link"></Link>
-          <a href="https://vitejs.dev/" target="_blank">
+        </div>
+
+        <Link to="/login" className="login-link"></Link>
+        {/* <a href="https://vitejs.dev/" target="_blank">
             <img src="/vite.svg" className="logo" alt="Vite logo" />
           </a>
           <a href="https://reactjs.org/" target="_blank">
@@ -75,8 +81,8 @@ function App() {
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>
-        </div>
-        <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+        </div>*/}
+        <p className="read-the-docs">Click on the Vite and React logos to learn more.</p>
       </div>
     </Router>
   );

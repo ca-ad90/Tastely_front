@@ -1,0 +1,456 @@
+.h2,
+.uploadIcon {
+  position: relative;
+}
+.h2 {
+  line-height: 24px;
+  font-weight: 600;
+}
+.uploadIcon {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.upload {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), -1px 0 1px rgba(0, 0, 0, 0.25);
+  width: 213px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 16px 8px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 83px;
+}
+.discover {
+  cursor: pointer;
+  font-size: 16px;
+}
+.discover,
+.saved {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), -1px 0 1px rgba(0, 0, 0, 0.25);
+  width: 213px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: -19px;
+}
+.h23 {
+  position: relative;
+  line-height: 28px;
+  font-weight: 600;
+}
+.myProfile {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), -1px 0 1px rgba(0, 0, 0, 0.25);
+  width: 213px;
+  height: 40px;
+  flex-direction: column;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  cursor: pointer;
+  margin-left: -19px;
+}
+.logOut,
+.myProfile,
+.uploadParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.logOut {
+  background-color: #f16e00;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), -1px 0 1px rgba(0, 0, 0, 0.25);
+  width: 213px;
+  flex-direction: column;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  margin-left: -19px;
+  color: #fff;
+}
+.uploadParent {
+  position: absolute;
+  top: 60px;
+  left: 146px;
+  width: 878px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.brandName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+}
+.brandNameWrapper {
+  position: absolute;
+  top: 27px;
+  left: 17px;
+  width: 230px;
+  height: 45px;
+  font-size: 32px;
+  color: #f16e00;
+  font-family: Chillax;
+}
+.tabletHeadermenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 6px 0 21px rgba(0, 0, 0, 0.1);
+  width: 1024px;
+  height: 100px;
+  overflow: hidden;
+}
+.whosCookingRight {
+  position: relative;
+  line-height: 28px;
+}
+.whosCookingRightNowWrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 0 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profilePictureIcon {
+  position: relative;
+  border-radius: 50%;
+  width: 72.28px;
+  height: 72.28px;
+  object-fit: cover;
+  z-index: 0;
+}
+.plusIcon {
+  position: absolute;
+  margin: 0 !important;
+  right: 0.44px;
+  bottom: 33.2px;
+  width: 17.68px;
+  height: 17.68px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  z-index: 1;
+}
+.tabletMyProfilePicture {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+}
+.frameChild {
+  width: 96.6px;
+  height: 96.6px;
+  z-index: 0;
+}
+.aya,
+.frameChild,
+.live {
+  position: relative;
+}
+.aya {
+  line-height: 20px;
+  z-index: 1;
+}
+.live {
+  letter-spacing: 0.52px;
+  line-height: 10.31px;
+  font-weight: 600;
+}
+.liveIcon {
+  margin: 0 !important;
+  position: absolute;
+  top: 44px;
+  left: 16.56px;
+  border-radius: 2.06px;
+  background-color: #f16e00;
+  box-shadow: 3.0927834510803223px 5.15463924407959px 10.82px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  padding: 0.5px 2.577319622039795px;
+  align-items: flex-start;
+  z-index: 2;
+  font-size: 6.19px;
+  color: #eff4ed;
+}
+.groupParent,
+.liveIcon,
+.liveIcon1,
+.liveIcon2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.groupParent {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 4px;
+}
+.liveIcon1,
+.liveIcon2 {
+  margin: 0 !important;
+  position: absolute;
+  top: 45px;
+  left: 14.96px;
+  border-radius: 2.06px;
+  background-color: #f16e00;
+  box-shadow: 3.0927834510803223px 5.15463924407959px 10.82px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  padding: 0.5px 2.577319622039795px;
+  align-items: flex-start;
+  z-index: 2;
+  font-size: 6.19px;
+  color: #eff4ed;
+}
+.liveIcon2 {
+  left: 15.35px;
+}
+.groupIcon {
+  position: relative;
+  width: 92.6px;
+  height: 92.6px;
+}
+.leila {
+  position: relative;
+  line-height: 20px;
+}
+.groupParent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.frameChild11,
+.frameChild12,
+.frameChild13 {
+  position: relative;
+  width: 89.72px;
+  height: 92.6px;
+}
+.frameChild12,
+.frameChild13 {
+  width: 50.6px;
+}
+.frameChild13 {
+  height: 50.6px;
+}
+.tabletMyProfilePictureParent {
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.goLiveButton {
+  position: absolute;
+  top: -2.25px;
+  left: 21.75px;
+  width: 55.5px;
+  height: 55.5px;
+}
+.userCarousel {
+  position: relative;
+  width: 390px;
+  height: 88px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-family: Roboto;
+}
+.frameParent,
+.profileCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  gap: 5px;
+}
+.profileCarousel {
+  position: absolute;
+  top: 131px;
+  left: 20px;
+  font-size: 22px;
+}
+.imageIcon,
+.nameOfThe {
+  flex: 1;
+  position: relative;
+}
+.imageIcon {
+  align-self: stretch;
+  border-radius: 16.09px 16.09px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.nameOfThe {
+  line-height: 26.82px;
+}
+.clockIcon,
+.time1 {
+  position: relative;
+  flex-shrink: 0;
+}
+.clockIcon {
+  width: 26.82px;
+  height: 26.82px;
+  overflow: hidden;
+}
+.time1 {
+  line-height: 26.82px;
+  display: inline-block;
+  width: 57.65px;
+  height: 20.11px;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.73px;
+  text-align: center;
+  font-size: 18.77px;
+}
+.by,
+.heading {
+  width: 357.99px;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.73px;
+  z-index: 0;
+}
+.by {
+  position: relative;
+  font-size: 18.77px;
+  line-height: 26.82px;
+  color: #656565;
+  display: inline-block;
+  z-index: 1;
+}
+.cardDetailsChild {
+  position: absolute;
+  margin: 0 !important;
+  top: 22.79px;
+  left: 21.45px;
+  width: 57.65px;
+  height: 57.65px;
+  z-index: 2;
+}
+.cardDetails {
+  border-radius: 0 0 16.09px 16.09px;
+  background-color: #fff;
+  box-shadow: 0 5.363129138946533px 5.36px rgba(0, 0, 0, 0.25);
+  width: 480px;
+  height: 100.56px;
+  display: flex;
+  flex-direction: column;
+  padding: 21.452516555786133px 21.452516555786133px 21.452516555786133px
+    100.55867004394531px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 4.02px;
+  z-index: 1;
+}
+.bookmarkIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: 20.11px;
+  right: 20.11px;
+  width: 54.97px;
+  height: 54.97px;
+  display: none;
+  z-index: 2;
+}
+.card {
+  border-radius: 16.09px;
+  box-shadow: 8.044693946838379px 13.407822608947754px 28.16px
+    rgba(0, 0, 0, 0.1);
+  width: 480px;
+  height: 380.78px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+}
+.card,
+.card1,
+.cardGroup,
+.cardParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card1 {
+  border-radius: 16.09px;
+  width: 480px;
+  height: 380.78px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+  background-image: url(/public/card@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.cardGroup,
+.cardParent {
+  position: absolute;
+  top: 321px;
+  align-items: flex-start;
+  gap: 30px;
+  font-family: Roboto;
+}
+.cardParent {
+  left: 524px;
+  width: 459px;
+}
+.cardGroup {
+  left: 20px;
+}
+.mainPageTablet {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 2046px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 18px;
+  color: #3b3b3b;
+  font-family: Nunito;
+}
+
+@media (max-width: 1024px) {
+    .mainPageTablet {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .mainPageTablet {
+      display: block;
+    }
+}

@@ -1,0 +1,377 @@
+.shape2Icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 887.8px;
+    height: 798.13px;
+  }
+  .landingPageTabletChild {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1024px;
+    height: 844px;
+  }
+  .vectorPlate {
+    position: absolute;
+    top: 0;
+    left: 753px;
+    width: 271px;
+    height: 334.67px;
+    object-fit: cover;
+  }
+  .tastely {
+    position: relative;
+    font-weight: 500;
+  }
+  .h1,
+  .h1BrandName,
+  .h1H2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .h1,
+  .h1H2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .h1H2 {
+    position: absolute;
+    top: 152px;
+    left: 79px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 64px;
+    color: #f16e00;
+    font-family: Chillax;
+  }
+  .h21 {
+    position: relative;
+    line-height: 32px;
+    display: inline-block;
+    width: 364px;
+    flex-shrink: 0;
+  }
+  .h2,
+  .h3 {
+    position: absolute;
+    left: 88px;
+  }
+  .h2 {
+    top: 367px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 32px;
+  }
+  .h3 {
+    top: 468px;
+    line-height: 20px;
+    font-family: Roboto;
+    display: inline-block;
+    width: 300px;
+  }
+  .button1 {
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  .button {
+    border-radius: 30px;
+    background-color: #f16e00;
+    width: 168px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .p2,
+  .registerButton {
+    position: absolute;
+    left: 88px;
+    font-family: Roboto;
+  }
+  .registerButton {
+    top: 651px;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+  }
+  .p2 {
+    top: 599px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .easilyShareYour,
+  .h3Seamless {
+    position: relative;
+    line-height: 28px;
+  }
+  .easilyShareYour {
+    line-height: 20px;
+    display: inline-block;
+    width: 257px;
+  }
+  .easilyShareYourFavoriteRecWrapper,
+  .h3Parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .easilyShareYourFavoriteRecWrapper {
+    padding: 5px 0 0;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .h3Parent {
+    position: absolute;
+    top: 1161px;
+    left: 54px;
+    justify-content: flex-start;
+    gap: 7px;
+    font-size: 22px;
+  }
+  .h32,
+  .h3Group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .h3Group {
+    position: absolute;
+    top: 1156px;
+    left: 383px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    font-size: 22px;
+  }
+  .groupChild,
+  .pexelsPhotoByFauxels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 18px;
+    width: 247px;
+    height: 239px;
+  }
+  .pexelsPhotoByFauxels {
+    object-fit: cover;
+  }
+  .groupChild {
+    background-color: rgba(241, 110, 0, 0.08);
+  }
+  .image4Icon,
+  .pexelsPhotoByFauxelsParent {
+    position: relative;
+    width: 247px;
+    height: 239px;
+  }
+  .image4Icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 18px;
+    width: 246.51px;
+    object-fit: cover;
+  }
+  .groupParent {
+    position: absolute;
+    top: 896px;
+    left: 59px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 89px;
+  }
+  .image6Icon,
+  .image7Icon,
+  .skrmbild202305161433461 {
+    position: absolute;
+    top: 341px;
+    left: 653px;
+    width: 291px;
+    height: 374px;
+    object-fit: cover;
+  }
+  .image6Icon,
+  .image7Icon {
+    top: 392px;
+    left: 561px;
+    width: 164px;
+    height: 323px;
+  }
+  .image7Icon {
+    top: 2761px;
+    left: 705px;
+  }
+  .h3Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .frameWrapper {
+    position: relative;
+    width: 284px;
+    height: 140px;
+  }
+  .button2,
+  .groupContainer {
+    display: flex;
+    align-items: center;
+  }
+  .groupContainer {
+    position: absolute;
+    top: 896px;
+    left: 717px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 21px;
+    font-size: 22px;
+  }
+  .button2 {
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #f16e00;
+    box-sizing: border-box;
+    width: 168px;
+    height: 50px;
+    flex-direction: row;
+    padding: 10px 16px;
+    justify-content: center;
+  }
+  .p3SignInButton,
+  .signUpButton {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .signUpButton {
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .p3SignInButton {
+    position: absolute;
+    top: 651px;
+    left: 284px;
+    flex-direction: column;
+    align-items: center;
+    color: #f16e00;
+    font-family: Roboto;
+  }
+  .looptroopAHappyRobotLookinIcon {
+    position: relative;
+    border-radius: 12px;
+    width: 317.7px;
+    height: 239px;
+    object-fit: cover;
+  }
+  .ourAiSystem {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 484px;
+  }
+  .frameDiv,
+  .looptroopAHappyRobotLookinParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .looptroopAHappyRobotLookinParent {
+    position: absolute;
+    top: 2355px;
+    left: 94px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+  }
+  .p3SignInButton1,
+  .registerButton1 {
+    position: absolute;
+    top: 3024px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Roboto;
+  }
+  .registerButton1 {
+    left: 150px;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: flex-start;
+    color: #fff;
+  }
+  .p3SignInButton1 {
+    left: 346px;
+    flex-direction: column;
+    align-items: center;
+    color: #f16e00;
+  }
+  .joinTastelyToday,
+  .signUpNow {
+    position: relative;
+    line-height: 32px;
+  }
+  .signUpNow {
+    line-height: 20px;
+    display: inline-block;
+    width: 327px;
+  }
+  .signUpNowAndEmbarkOnACuWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0 0;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }
+  .joinTastelyTodayParent {
+    position: absolute;
+    top: 2837px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+    text-align: center;
+    font-size: 32px;
+    color: #f16e00;
+  }
+  .landingPageTablet {
+    position: relative;
+    background-color: #fff;
+    width: 1024px;
+    height: 3639px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

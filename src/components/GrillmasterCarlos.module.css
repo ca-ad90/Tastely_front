@@ -1,0 +1,48 @@
+.groupChild,
+.pexelsPhotoByRdneStockPro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  width: 235px;
+  height: 295px;
+}
+.pexelsPhotoByRdneStockPro {
+  object-fit: cover;
+}
+.groupChild {
+  background-color: rgba(241, 110, 0, 0.08);
+  box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+}
+.pexelsPhotoByRdneStockProParent {
+  position: relative;
+  width: 235px;
+  height: 295px;
+}
+.grillmastercarlos1 {
+  position: relative;
+  line-height: 20px;
+}
+.grillmastercarlosWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fireUpThose {
+  position: relative;
+  line-height: 25px;
+  display: inline-block;
+  width: 235px;
+}
+.grillmastercarlos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #3b3b3b;
+  font-family: Roboto;
+}

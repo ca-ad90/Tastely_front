@@ -1,0 +1,64 @@
+.section1LandingPageChild {
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    left: 0.12px;
+    border-radius: 13.47px;
+    background-color: rgba(241, 110, 0, 0.05);
+    width: 270.23px;
+    height: 262px;
+    z-index: 0;
+  }
+  .image3Icon {
+    position: relative;
+    border-radius: 13.5px;
+    width: 270.23px;
+    height: 262px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .h3Seamless {
+    position: relative;
+    line-height: 28px;
+  }
+  .h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .easilyShareYour {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 270px;
+  }
+  .easilyShareYourFavoriteRecWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .h3Parent,
+  .section1LandingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .h3Parent {
+    align-items: flex-start;
+    gap: 7px;
+    z-index: 2;
+  }
+  .section1LandingPage {
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    text-align: left;
+    font-size: 22px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

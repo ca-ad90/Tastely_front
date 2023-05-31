@@ -1,0 +1,147 @@
+.groupChild,
+.pexelsPhotoByAnnaTarazevic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  width: 235px;
+  height: 295px;
+}
+.pexelsPhotoByAnnaTarazevic {
+  object-fit: cover;
+}
+.groupChild {
+  background-color: rgba(241, 110, 0, 0.08);
+}
+.pexelsPhotoByAnnaTarazevicParent {
+  position: relative;
+  width: 235px;
+  height: 295px;
+}
+.kitchenexplorermalikInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.heyThereIm,
+.kitchenexplorermalik1 {
+  position: relative;
+  line-height: 20px;
+}
+.heyThereIm {
+  line-height: 25px;
+  display: inline-block;
+  width: 235px;
+}
+.kitchenexplorermalik {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.pexelsPhotoByKarolinaGraboParent {
+  position: relative;
+  width: 235px;
+  height: 295px;
+  z-index: 0;
+}
+.wholesomechefemilyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.heyFoodiesIm {
+  position: relative;
+  line-height: 25px;
+  display: inline-block;
+  width: 235px;
+  z-index: 2;
+}
+.buttonBackArrowTablet {
+  position: absolute;
+  margin: 0 !important;
+  top: 121.5px;
+  left: 77px;
+  width: 51.25px;
+  height: 51.25px;
+  z-index: 3;
+}
+.meetourcreatorsCards,
+.wholesomechefemily1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+}
+.meetourcreatorsCards {
+  position: absolute;
+  top: calc(50% - 230px);
+  left: calc(50% - 899.5px);
+  width: 1799px;
+  overflow: hidden;
+  flex-direction: row;
+  gap: 40px;
+}
+.meetOurCreators {
+  position: relative;
+  line-height: 28px;
+}
+.meetOurCommunity {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto;
+  text-align: center;
+}
+.h3MeetOurCreators {
+  position: absolute;
+  top: calc(50% - 315.5px);
+  left: calc(50% - 844.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 22px;
+  font-family: Nunito;
+}
+.meetourcreatorsCardsParent {
+  position: absolute;
+  top: 145.5px;
+  left: 52px;
+  width: 1799px;
+  height: 460px;
+}
+.buttonBackArrowTablet1 {
+  position: absolute;
+  top: 266.81px;
+  left: 19.81px;
+  width: 51.64px;
+  height: 51.64px;
+}
+.backgroundMeetOurCreatorsChild {
+  position: absolute;
+  top: 636px;
+  left: 498px;
+  width: 35px;
+  height: 12px;
+}
+.backgroundMeetOurCreators {
+  position: absolute;
+  top: 1523px;
+  left: 0;
+  background-color: rgba(174, 199, 159, 0.37);
+  width: 1032px;
+  height: 665px;
+  overflow-x: auto;
+  text-align: left;
+  font-size: 16px;
+  color: #3b3b3b;
+  font-family: Roboto;
+}
