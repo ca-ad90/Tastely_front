@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import './SignUp.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./SignUp.css";
 
 const SignUp: React.FC = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showRegistration, setShowRegistration] = useState(false);
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,26 +26,26 @@ const SignUp: React.FC = () => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', name, email, password);
+    console.log("Form submitted:", name, email, password);
+    window.location.href = "/login";
   };
 
   const handleRegisterClick = () => {
     setShowRegistration(true);
   };
-  
 
   return (
     <div className="signup-container">
       <div className="signup-card">
         <h2 className="signup-title">Create an Account</h2>
         <div className="social-buttons">
-          <button className="social-button" onClick={() => console.log('Signing up with Google')}>
+          <button className="social-button" onClick={() => console.log("Signing up with Google")}>
             Sign up with Google
           </button>
-          <button className="social-button" onClick={() => console.log('Signing up with Facebook')}>
+          <button className="social-button" onClick={() => console.log("Signing up with Facebook")}>
             Sign up with Facebook
           </button>
-          <button className="social-button" onClick={() => console.log('Signing up with Apple')}>
+          <button className="social-button" onClick={() => console.log("Signing up with Apple")}>
             Sign up with Apple
           </button>
         </div>
@@ -60,27 +61,13 @@ const SignUp: React.FC = () => {
               <label htmlFor="name" className="form-label">
                 Name
               </label>
-              <input
-                type="text"
-                id="name"
-                className="form-input"
-                value={name}
-                onChange={handleNameChange}
-                required
-              />
+              <input type="text" id="name" className="form-input" value={name} onChange={handleNameChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="name" className="form-label">
                 Phone number
               </label>
-              <input
-                type="text"
-                id="phone"
-                className="form-input"
-                value={name}
-                onChange={handlePhoneChange}
-                required
-              />
+              <input type="text" id="phone" className="form-input" value={name} onChange={handlePhoneChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="email" className="form-label">

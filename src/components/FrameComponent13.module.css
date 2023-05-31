@@ -1,0 +1,70 @@
+.popularRecipes {
+    position: relative;
+    line-height: 28px;
+  }
+  .popularRecipesWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .groupChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    width: 100.53px;
+    height: 99px;
+    object-fit: cover;
+  }
+  .frameWrapper,
+  .smashedBurger {
+    position: relative;
+    width: 100.53px;
+    height: 99px;
+  }
+  .smashedBurger {
+    line-height: 20px;
+    display: inline-block;
+    width: 101px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .frameGroup,
+  .groupParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .frameGroup {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    flex-direction: row;
+    gap: 22px;
+  }
+  .popularRecipesCarousel {
+    position: relative;
+    background-color: transparent;
+    width: 390px;
+    height: 142px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .frameParent {
+    width: 382px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    font-size: 22px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

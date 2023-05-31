@@ -1,0 +1,99 @@
+.discoverDeliciousRecipes {
+    position: relative;
+    line-height: 28px;
+    display: inline-block;
+    width: 363px;
+    flex-shrink: 0;
+  }
+  .discoverDeliciousRecipesWrapper {
+    width: 363px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .magnifyingGlassIcon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForA {
+    position: relative;
+    line-height: 20px;
+  }
+  .iconText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    z-index: 0;
+  }
+  .filterIconChild {
+    position: absolute;
+    height: 100%;
+    width: 125.71%;
+    top: 0;
+    right: -8.57%;
+    bottom: 0;
+    left: -17.14%;
+    border-radius: 15px;
+    background-color: rgba(232, 232, 232, 0.87);
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+  }
+  .filterIcon1 {
+    position: absolute;
+    height: 66.67%;
+    width: 66.67%;
+    top: 15.63%;
+    right: 21.9%;
+    bottom: 17.71%;
+    left: 11.43%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .filterIcon {
+    position: absolute;
+    margin: 0 !important;
+    top: 4px;
+    left: 309px;
+    width: 35px;
+    height: 32px;
+    z-index: 1;
+  }
+  .searchInputField {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    width: 360px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0 3px 20px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 83px;
+    font-size: 14px;
+    color: #888;
+    font-family: Roboto;
+  }
+  .frameParent {
+    width: 363px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    text-align: left;
+    font-size: 26px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

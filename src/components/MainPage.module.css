@@ -296,23 +296,10 @@
     position: relative;
     background-color: #fff;
     width: 100%;
-    min-width: 390px;
     height: 6914px;
     overflow-y: auto;
     text-align: left;
     font-size: 22px;
     color: #3b3b3b;
     font-family: Nunito;
-  }
-
-@media (max-width: 1024px) {
-    .mainPage {
-      display: block;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .mainPage {
-      display: none;
-    }
   }

@@ -442,15 +442,3 @@
   color: #3b3b3b;
   font-family: Nunito;
 }
-
-@media (max-width: 1024px) {
-    .mainPageTablet {
-      display: none;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .mainPageTablet {
-      display: block;
-    }
-}

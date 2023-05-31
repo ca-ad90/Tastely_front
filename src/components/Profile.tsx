@@ -1,5 +1,6 @@
-import React from 'react';
-import './Profile.css';
+import React from "react";
+import "./Profile.css";
+import HamburgerMenu from "../components/HamburgerMenu";
 
 interface ProfileProps {
   name: string;
@@ -14,6 +15,7 @@ interface ProfileProps {
 const Profile: React.FC<ProfileProps> = ({ name, avatar, favoriteRecipes }) => {
   return (
     <div className="profile">
+      <HamburgerMenu />
       <div className="profile-header">
         <img className="profile-avatar" src={avatar} alt={name} />
         <h2 className="profile-name">{name}</h2>

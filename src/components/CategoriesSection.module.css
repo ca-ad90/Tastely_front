@@ -1,0 +1,90 @@
+.showAll {
+    position: absolute;
+    top: 17.9%;
+    left: 81.9%;
+    line-height: 20px;
+  }
+  .frameChild,
+  .french {
+    position: relative;
+    width: 110px;
+    height: 105px;
+  }
+  .french {
+    line-height: 20px;
+    display: inline-block;
+    width: 87px;
+    height: 29px;
+    flex-shrink: 0;
+  }
+  .frameDiv,
+  .groupContainer,
+  .groupParent,
+  .groupParent1 {
+    position: absolute;
+    height: 59.26%;
+    width: 25%;
+    top: 40.74%;
+    right: 0;
+    bottom: 0;
+    left: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .frameDiv,
+  .groupContainer,
+  .groupParent1 {
+    right: 25%;
+    left: 50%;
+  }
+  .frameDiv,
+  .groupParent1 {
+    right: 50%;
+    left: 25%;
+  }
+  .groupParent1 {
+    right: 75%;
+    left: 0;
+  }
+  .foodCategoryShowAll {
+    position: relative;
+    width: 348px;
+    height: 162px;
+    z-index: 0;
+  }
+  .categories {
+    position: relative;
+    line-height: 28px;
+  }
+  .categoriesWrapper {
+    margin: 0 !important;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    font-size: 22px;
+    font-family: Nunito;
+  }
+  .foodCategoryShowAllParent {
+    width: 387px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 3px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }

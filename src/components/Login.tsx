@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './Login.css';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Login.css";
 
 const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,11 +17,8 @@ const Login: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login submitted:', email, password);
-  };
-
-  const handleSignUpClick = () => {
-    navigate('/signup');
+    console.log("Login submitted:", email, password);
+    navigate("/mainpage"); // Navigera till mainpage efter inloggning
   };
 
   return (
@@ -33,14 +30,7 @@ const Login: React.FC = () => {
             <label htmlFor="email" className="form-label">
               Email
             </label>
-            <input
-              type="email"
-              id="email"
-              className="form-input"
-              value={email}
-              onChange={handleEmailChange}
-              required
-            />
+            <input type="email" id="email" className="form-input" value={email} onChange={handleEmailChange} required />
           </div>
           <div className="form-group">
             <label htmlFor="password" className="form-label">
@@ -63,7 +53,10 @@ const Login: React.FC = () => {
           </button>
         </form>
         <p className="login-info">
-          Don't have an account? <Link to="/signup">Sign up</Link>
+          Don't have an account?{" "}
+          <Link to="/signup" className="signup-link">
+            Sign up
+          </Link>
         </p>
         <div className="alternative-login">
           <p>Or login with:</p>

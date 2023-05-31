@@ -1,0 +1,116 @@
+.recommendedForYou {
+    position: relative;
+    line-height: 28px;
+  }
+  .frameDiv,
+  .frameGroup,
+  .frameParent,
+  .recommendedForYouWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .recommendedForYouWrapper {
+    flex-direction: row;
+    padding: 10px 10px 10px 0;
+  }
+  .frameDiv,
+  .frameGroup,
+  .frameParent {
+    flex-direction: column;
+    gap: 11px;
+  }
+  .frameGroup,
+  .frameParent {
+    gap: 30px;
+  }
+  .frameParent {
+    position: absolute;
+    top: 121px;
+    left: 3px;
+    align-items: center;
+    gap: 40px;
+  }
+  .brandName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .brandNameWrapper {
+    position: relative;
+    width: 349px;
+    height: 45px;
+    z-index: 0;
+  }
+  .listIcon {
+    position: relative;
+    width: 38.4px;
+    height: 38.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dropdownMenu,
+  .menuheading {
+    display: flex;
+    align-items: center;
+  }
+  .menuheading {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 9.60000228881836px 19.20000457763672px;
+    justify-content: flex-end;
+  }
+  .dropdownMenu {
+    margin: 0 !important;
+    position: absolute;
+    top: 12px;
+    left: 301px;
+    border-radius: 4.8px;
+    background-color: transparent;
+    flex-direction: column;
+    padding: 9.60000228881836px 0;
+    justify-content: center;
+    z-index: 1;
+  }
+  .phoneHeadermenu,
+  .phoneHeadermenuWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .phoneHeadermenu {
+    background-color: #fff;
+    box-shadow: 6px 0 21px rgba(0, 0, 0, 0.1);
+    width: 390px;
+    height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 28px 13px 28px 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .phoneHeadermenuWrapper {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 32px;
+    color: #f16e00;
+    font-family: Chillax;
+  }
+  .discover {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    min-width: 390px;
+    height: 6730px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 22px;
+    color: #3b3b3b;
+    font-family: Nunito;
+  }

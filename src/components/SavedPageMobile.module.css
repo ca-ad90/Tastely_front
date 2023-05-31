@@ -1,0 +1,353 @@
+.profilePictureIcon {
+    position: relative;
+    border-radius: 50%;
+    width: 139px;
+    height: 139px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .followAnimationIcon {
+    position: absolute;
+    margin: 0 !important;
+    right: 0;
+    bottom: 65px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    z-index: 1;
+  }
+  .myProfilePicturedefault {
+    position: absolute;
+    top: 133px;
+    left: 146px;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .hugobergstrm {
+    position: absolute;
+    top: 241px;
+    left: 113px;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: Nunito;
+    color: #000;
+  }
+  .magnifyingGlassIcon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForA {
+    position: relative;
+    line-height: 20px;
+  }
+  .iconText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    z-index: 0;
+  }
+  .filterIconChild {
+    position: absolute;
+    height: 100%;
+    width: 125.71%;
+    top: 0;
+    right: -8.57%;
+    bottom: 0;
+    left: -17.14%;
+    border-radius: 15px;
+    background-color: rgba(232, 232, 232, 0.87);
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .filterIcon1 {
+    position: absolute;
+    height: 66.67%;
+    width: 66.67%;
+    top: 15.63%;
+    right: 21.9%;
+    bottom: 17.71%;
+    left: 11.43%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .filterIcon {
+    position: absolute;
+    margin: 0 !important;
+    top: 4px;
+    left: 309px;
+    width: 35px;
+    height: 32px;
+    display: none;
+    z-index: 1;
+  }
+  .savedPageMobileChild,
+  .searchInputField {
+    position: absolute;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+  }
+  .searchInputField {
+    top: 382px;
+    left: 28px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    width: 276px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0 3px 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 83px;
+    color: #888;
+  }
+  .savedPageMobileChild {
+    top: 384px;
+    left: 326px;
+    border-radius: 50%;
+    background-color: #f16e00;
+    width: 36px;
+    height: 36px;
+  }
+  .octiconplus16 {
+    position: absolute;
+    top: 392px;
+    left: 334px;
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .cardSavePageChild {
+    position: absolute;
+    height: 71.26%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 28.74%;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .cardSavePageItem {
+    position: absolute;
+    height: 28.74%;
+    width: 98.78%;
+    top: 71.26%;
+    right: 1.22%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(217, 217, 217, 0.11);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .allRecipes,
+  .recipes {
+    position: absolute;
+    top: 85.63%;
+    left: 4.27%;
+    line-height: 20px;
+  }
+  .allRecipes {
+    top: 73.65%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .cardSavePage,
+  .cardSavePage1 {
+    position: absolute;
+    top: 471px;
+    left: 20px;
+    width: 164px;
+    height: 167px;
+  }
+  .cardSavePage1 {
+    top: 1092px;
+  }
+  .cardSavePage2,
+  .cardSavePage3,
+  .cardSavePage4,
+  .cardSavePage5 {
+    position: absolute;
+    top: 471px;
+    left: 207px;
+    width: 164px;
+    height: 167px;
+  }
+  .cardSavePage3,
+  .cardSavePage4,
+  .cardSavePage5 {
+    top: 1092px;
+  }
+  .cardSavePage4,
+  .cardSavePage5 {
+    top: 678px;
+    left: 20px;
+  }
+  .cardSavePage5 {
+    top: 1299px;
+  }
+  .cardSavePage6,
+  .cardSavePage7,
+  .cardSavePage8,
+  .cardSavePage9 {
+    position: absolute;
+    top: 678px;
+    left: 207px;
+    width: 164px;
+    height: 167px;
+  }
+  .cardSavePage7,
+  .cardSavePage8,
+  .cardSavePage9 {
+    top: 1299px;
+  }
+  .cardSavePage8,
+  .cardSavePage9 {
+    top: 885px;
+    left: 20px;
+  }
+  .cardSavePage9 {
+    top: 1506px;
+  }
+  .cardSavePage10,
+  .cardSavePage11,
+  .groupChild {
+    position: absolute;
+    top: 885px;
+    left: 207px;
+    width: 164px;
+    height: 167px;
+  }
+  .cardSavePage11,
+  .groupChild {
+    top: 1506px;
+  }
+  .groupChild {
+    top: 0;
+    left: 0;
+    border-radius: 999px;
+    background-color: #3b3b3b;
+    width: 83px;
+    height: 29px;
+  }
+  .saved {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    left: calc(50% - 21.5px);
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .groupItem,
+  .rectangleParent {
+    position: absolute;
+    top: 0;
+    width: 83px;
+    height: 29px;
+  }
+  .rectangleParent {
+    left: 119px;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+  }
+  .groupItem {
+    left: 0;
+    border-radius: 999px;
+    background-color: #fff;
+    border: 0.3px solid #000;
+    box-sizing: border-box;
+  }
+  .created {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    left: calc(50% - 28.5px);
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .rectangleGroup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 6px 10px 21px rgba(0, 0, 0, 0.1);
+    width: 83px;
+    height: 29px;
+    color: #3b3b3b;
+  }
+  .groupParent {
+    position: absolute;
+    top: 302px;
+    left: 96px;
+    width: 202px;
+    height: 29px;
+    font-size: 16px;
+    color: #fff;
+  }
+  .savedPageMobileItem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 390px;
+    height: 346px;
+  }
+  .backArrowIcon {
+    position: relative;
+    width: 14px;
+    height: 25px;
+    z-index: 0;
+  }
+  .h1My {
+    position: absolute;
+    margin: 0 !important;
+    top: 20px;
+    left: 91px;
+    line-height: 28px;
+    display: inline-block;
+    z-index: 1;
+  }
+  .backArrowParent {
+    position: absolute;
+    top: 39px;
+    left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 77px;
+    cursor: pointer;
+  }
+  .headerUploadRecipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 6px 0 21px rgba(0, 0, 0, 0.1);
+    width: 390px;
+    height: 100px;
+    overflow: hidden;
+    font-size: 26px;
+    font-family: Nunito;
+  }
+  .savedPageMobile {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    min-width: 390px;
+    height: 1942px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: Roboto;
+  }

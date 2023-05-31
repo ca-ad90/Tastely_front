@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Profile from "./components/Profile";
 import RecipeUpload from "./components/RecipeUpload";
 import Discover from "./components/Discover";
-import Saved from "./components/Saved";
+import SavedPageMobile from "./components/SavedPageMobile";
 import LandingPage from "./components/LandingPage";
 import LandingPageTablet from "./components/LandingPageTablet";
 import Login from "./components/Login";
@@ -52,7 +52,7 @@ function App() {
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
           <Route path="/upload" element={<RecipeUpload />} />
           <Route path="/discover" element={<Discover />} />
-          <Route path="/saved" element={<Saved />} />
+          <Route path="/saved" element={<SavedPageMobile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/mainpage" element={<MainPage />} />
