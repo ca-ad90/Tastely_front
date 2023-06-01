@@ -1,22 +1,12 @@
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
+import axios from "axios";
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
-import './Login.css';
-
-const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [loginStatus, setLoginStatus] = useState('');
-
+  const [loginStatus, setLoginStatus] = useState("");
 
   const navigate = useNavigate();
 
@@ -34,25 +24,23 @@ const Login: React.FC = () => {
     console.log("Login submitted:", email, password);
     navigate("/mainpage"); // Navigera till mainpage efter inloggning
 
-
     try {
-      const response = await axios.post('http://localhost:8080/login', {
+      const response = await axios.post("http://localhost:8080/login", {
         email,
         password,
       });
 
-      console.log('User logged in:', response.data);
-      setLoginStatus('success');
-      navigate('/profile');
+      console.log("User logged in:", response.data);
+      setLoginStatus("success");
+      navigate("/profile");
     } catch (error) {
-      console.error('Error logging in:', error);
-      setLoginStatus('failure');
+      console.error("Error logging in:", error);
+      setLoginStatus("failure");
     }
   };
 
   const handleSignUpClick = () => {
-    navigate('/signup');
-
+    navigate("/signup");
   };
 
   return (
@@ -101,8 +89,8 @@ const Login: React.FC = () => {
           </div>
         </div>
       </div>
-      {loginStatus === 'success' && <p>Login successful!</p>}
-      {loginStatus === 'failure' && <p>Login failed. Please try again.</p>}
+      {loginStatus === "success" && <p>Login successful!</p>}
+      {loginStatus === "failure" && <p>Login failed. Please try again.</p>}
     </div>
   );
 };
