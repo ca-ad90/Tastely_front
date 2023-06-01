@@ -31,7 +31,7 @@ const RecipeUpload: React.FC = () => {
       });
 
       const createdRecipeId = response.data.id;
-      navigate(`/recipes/${createdRecipeId}`);
+      navigate(`/recipe/${createdRecipeId}`);
     } catch (error) {
       console.error(error);
     }

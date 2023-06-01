@@ -1,23 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './RecipePage.css';
 
 interface RecipePageProps {
-  recipe: {
-    name: string;
-    description: string;
-    image: string;
-    creator: {
-      name: string;
-      avatar: string;
-    };
-    servings: number;
-    cookTime: number;
-    ingredients: string[];
-    instructions: string[];
-  };
+  id: string;
 }
 
-const RecipePage: React.FC<RecipePageProps> = ({ recipe }) => {
+interface Recipe {
+  name: string;
+  description: string;
+  image: string;
+  creator: {
+    name: string;
+    avatar: string;
+  };
+  servings: number;
+  cookTime: number;
+  ingredients: string[];
+  instructions: string[];
+}
+
+const RecipePage: React.FC<RecipePageProps> = ({ id }) => {
+  const [recipe, setRecipe] = useState<Recipe | null>(null);
+
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      try {
+        const response = await fetch(`/api/recipes/${id}`);
+        const data = await response.json();
+        setRecipe(data);
+      } catch (error) {
+        console.error('Error fetching recipe:', error);
+      }
+    };
+
+    fetchRecipe();
+  }, [id]);
+
+  if (!recipe) {
+    return <div>Loading recipe...</div>;
+  }
+
   return (
     <div className="recipe-page">
       <div className="recipe-header">
