@@ -19,7 +19,7 @@ const RecipeUpload: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/recipes", {
+      const response = await axios.post("http://localhost:8080/recipe", {
         name,
         description,
         ingredients: ingredients.split("\n"),
