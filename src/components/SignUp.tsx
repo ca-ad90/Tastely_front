@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import "./SignUp.css";
 
@@ -23,6 +23,8 @@ const SignUp: React.FC = () => {
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const navigate = useNavigate();
+
     try {
       const response = await axios.post("http://localhost:8080/register", {
         name,
@@ -31,6 +33,7 @@ const SignUp: React.FC = () => {
       });
 
       console.log("User registered:", response.data);
+      navigate("/login");
     } catch (error) {
       console.error("Error registering user:", error);
     }

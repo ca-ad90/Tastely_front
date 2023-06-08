@@ -77,7 +77,7 @@ const SavedPageMobile: FunctionComponent = () => {
         <img className={styles.cardSavePageChild} alt="" src="/rectangle-467@2x.png" />
         <div className={styles.cardSavePageItem} />
         <div className={styles.recipes}>3 Recipes</div>
-        <div className={styles.allRecipes}>salad</div>
+        <div className={styles.allRecipes}>Salad</div>
       </div>
       <div className={styles.cardSavePage8}>
         <img className={styles.cardSavePageChild} alt="" src="/rectangle-468@2x.png" />

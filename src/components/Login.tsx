@@ -1,25 +1,12 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
-import axios from "axios";
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState("");
-=======
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
-import './Login.css';
-
-const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [loginStatus, setLoginStatus] = useState('');
-
->>>>>>> e296f6e80af39654a3740f223d11555594f9f192
 
   const navigate = useNavigate();
 
@@ -53,7 +40,9 @@ const Login: React.FC = () => {
   };
 
   const handleSignUpClick = () => {
-    navigate("/signup");
+    {
+      navigate("/signup");
+    }
   };
 
   return (

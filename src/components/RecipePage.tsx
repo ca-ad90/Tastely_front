@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './RecipePage.css';
+import React, { useEffect, useState } from "react";
+import "./RecipePage.css";
 
 interface RecipePageProps {
   id: string;
@@ -29,7 +29,7 @@ const RecipePage: React.FC<RecipePageProps> = ({ id }) => {
         const data = await response.json();
         setRecipe(data);
       } catch (error) {
-        console.error('Error fetching recipe:', error);
+        console.error("Error fetching recipe:", error);
       }
     };
 
@@ -59,38 +59,21 @@ const RecipePage: React.FC<RecipePageProps> = ({ id }) => {
           <p className="recipe-description">{recipe.description}</p>
           <div className="recipe-info">
             <div className="recipe-info-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  fill="currentColor"
-                  d="M12 2L2 7l1 15h18l1-15L12 2zm0 2l8 3H4L12 4zm-2 7v4h4v-4h-4z"
-                />
+                <path fill="currentColor" d="M12 2L2 7l1 15h18l1-15L12 2zm0 2l8 3H4L12 4zm-2 7v4h4v-4h-4z" />
               </svg>
-              <span className="recipe-info-item-text">
-                Cook Time: {recipe.cookTime} minutes
-              </span>
+              <span className="recipe-info-item-text">Cook Time: {recipe.cookTime} minutes</span>
             </div>
             <div className="recipe-info-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
                   fill="currentColor"
                   d="M19.7 6.3l-1.4 1.4c1.2 1.2 1.9 2.8 1.9 4.5s-.7 3.3-1.9 4.5-2.8 1.9-4.5 1.9-3.3-.7-4.5-1.9S8 15.1 8 13.4c0-1.7.7-3.3 1.9-4.5L8.3 6.3C6.7 7.9 6 10 6 12.1s.7 4.2 2.1 5.6S11.8 20 14 20s4.2-.7 5.6-2.1S20 15.9 20 13.7c0-2.1-.7-4.2-2.1-5.6zM14 18c-1.9 0-3.5-1.6-3.5-3.5S12.1 11 14 11s3.5 1.6 3.5 3.5S15.9 18 14 18zm0-6c-1.2 0-2.3.4-3.2 1.2s-1.4 1.9-1.4 3.2c0 1.2.4 2.3 1.2 3.2s1.9 1.4 3.2 1.4 2.3-.4 3.2-1.2 1.4-1.9 1.4-3.2c0-1.2-.4-2.3-1.2-3.2s-1.9-1.4-3.2-1.4zm0 3c.6 0 1.1.2 1.6.6s.6 1 .6 1.6-.2 1.1-.6 1.6-1 .6-1.6.6-1.1-.2-1.6-.6-.6-1-.6-1.6.2-1.1.6-1.6 1-.6 1.6-.6z"
                 />
               </svg>
-              <span className="recipe-info-item-text">
-                Servings: {recipe.servings}
-              </span>
+              <span className="recipe-info-item-text">Servings: {recipe.servings}</span>
             </div>
           </div>
           <div className="recipe-ingredients">

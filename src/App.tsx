@@ -9,6 +9,7 @@ import sven from "./assets/hidethepainharold.jpg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Profile from "./components/Profile";
 import RecipeUpload from "./components/RecipeUpload";
+import Upload from "./components/Upload";
 import Discover from "./components/Discover";
 import SavedPageMobile from "./components/SavedPageMobile";
 import LandingPage from "./components/LandingPage";
@@ -46,11 +47,14 @@ function App() {
           <Route path="/" element={<LandingPageTablet />} />
           <Route path="/mainapp" element={<MainApp />} />
           <Route
-  path="/profile"
-  element={<Profile user={{ name: recipe.creator.name, avatar: recipe.creator.avatar, favoriteRecipes: [] }} />}
-/>
+            path="/profile"
+            element={
+              <Profile user={{ name: recipe.creator.name, avatar: recipe.creator.avatar, favoriteRecipes: [] }} />
+            }
+          />
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
-          <Route path="/upload" element={<RecipeUpload />} />
+          <Route path="/recipeupload" element={<RecipeUpload />} />
+          <Route path="/upload" element={<Upload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<SavedPageMobile />} />
           <Route path="/login" element={<Login />} />

@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useState } from "react";
 import HamburgerMenu from "../components/HamburgerMenu";
 import FrameComponent11 from "../components/FrameComponent11";
 import CategoriesSection from "../components/CategoriesSection";
@@ -6,6 +6,7 @@ import FrameComponent13 from "../components/FrameComponent13";
 import Card1 from "../components/Card1";
 import Card5 from "../components/Card5";
 import styles from "./Discover.module.css";
+
 const Discover: FunctionComponent = () => {
   return (
     <div className={styles.discover}>
