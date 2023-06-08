@@ -24,10 +24,6 @@ const RecipeUpload: React.FC = () => {
         description,
         ingredients: ingredients.split("\n"),
         instructions: instructions.split("\n"),
-        cookTime: parseInt(cookTime),
-        servings: parseInt(servings),
-        image,
-        creator,
       });
 
       const createdRecipeId = response.data.id;
@@ -57,22 +53,6 @@ const RecipeUpload: React.FC = () => {
         <div>
           <label htmlFor="instructions">Instructions:</label>
           <textarea id="instructions" value={instructions} onChange={(e) => setInstructions(e.target.value)} />
-        </div>
-        <div>
-          <label htmlFor="cookTime">Cook Time (minutes):</label>
-          <input type="number" id="cookTime" value={cookTime} onChange={(e) => setCookTime(e.target.value)} />
-        </div>
-        <div>
-          <label htmlFor="servings">Servings:</label>
-          <input type="number" id="servings" value={servings} onChange={(e) => setServings(e.target.value)} />
-        </div>
-        <div>
-          <label htmlFor="image">Image URL:</label>
-          <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)} />
-        </div>
-        <div>
-          <label htmlFor="creator">Creator:</label>
-          <input type="text" id="creator" value={creator} onChange={(e) => setCreator(e.target.value)} />
         </div>
         <button type="submit">Upload</button>
       </form>

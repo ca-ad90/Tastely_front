@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import HamburgerMenu from "../components/HamburgerMenu";
 import './RecipePage.css';
 
 interface Recipe {
@@ -10,7 +12,10 @@ interface Recipe {
 }
 
 function RecipePage() {
+  const navigate = useNavigate();
   const [recipe, setRecipe] = useState<Recipe | null>(null);
+  const [searchId, setSearchId] = useState('');
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetchRecipe();
@@ -19,9 +24,13 @@ function RecipePage() {
   const fetchRecipe = async () => {
     try {
       const recipeId = getRecipeIdFromUrl();
-      const response = await fetch(`http://localhost:8080/recipe/${recipeId}`); // Replace with your API endpoint
-      const data = await response.json();
-      setRecipe(data);
+      const response = await fetch(`http://localhost:8080/recipe/${recipeId}`);
+      if (response.ok) {
+        const data = await response.json();
+        setRecipe(data);
+      } else {
+        setRecipe(null);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -33,33 +42,48 @@ function RecipePage() {
     return isNaN(recipeId) ? 1 : recipeId;
   };
 
+  const handleSearch = (event: React.FormEvent) => {
+    event.preventDefault();
+    const id = parseInt(searchId);
+    if (isNaN(id) || id < 1) {
+      setError(true);
+    } else {
+      setError(false);
+      navigate(`/recipe/${id}`);
+      setSearchId('');
+      fetchRecipe();
+    }
+  };
+
   if (!recipe) {
     return <div>Loading...</div>;
   }
 
   return (
+    <div className="recipe-page-container">
     <div className="recipe-page">
+      <HamburgerMenu />
       <div className="recipe-details">
         <div className="recipe-header">
           <div className="recipe-avatar">
-            {/* Display the recipe's avatar */}
+            {/* ev mer info */}
           </div>
           <div className="recipe-creator">
-            {/* Display the recipe's creator */}
+            {/* ev mer info */}
           </div>
         </div>
         <div className="recipe-content">
           <div className="recipe-image">
-            {/* Display the recipe's image */}
+            {/* ev mer info */}
           </div>
           <div className="recipe-name">{recipe.name}</div>
           <div className="recipe-description">{recipe.description}</div>
           <div className="recipe-info">
             <div className="recipe-info-item">
-              {/* Display prep time */}
+              {/* ev mer info */}
             </div>
             <div className="recipe-info-item">
-              {/* Display servings */}
+              {/* ev mer info */}
             </div>
           </div>
           <div className="recipe-ingredients">
@@ -84,6 +108,19 @@ function RecipePage() {
           </div>
         </div>
       </div>
+      <div className="search-description">
+        Search for other recipes by their ID!
+      </div>
+      {error && <div className="warning">Invalid ID</div>}
+      <form onSubmit={handleSearch}>
+        <input
+          type="text"
+          value={searchId}
+          onChange={(e) => setSearchId(e.target.value)}
+        />
+        <button type="submit">Go</button>
+      </form>
+    </div>
     </div>
   );
 }

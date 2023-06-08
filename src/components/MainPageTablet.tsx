@@ -13,6 +13,10 @@ const MainPageTablet: FunctionComponent = () => {
     navigate("/profile");
   }, [navigate]);
 
+  const onCardClick = useCallback(() => {
+    navigate("/recipe/1");
+  }, [navigate]);
+
   return (
     <div className={styles.mainPageTablet}>
       <div className={styles.tabletHeadermenu}>
@@ -152,9 +156,9 @@ const MainPageTablet: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className={styles.cardParent}>
-        <div className={styles.card}>
-          <img className={styles.imageIcon} alt="" src="/image@2x.png" />
+      <div className={styles.cardParent} onClick={onCardClick}>
+        <div className={styles.card} onClick={onCardClick}>
+          <img className={styles.imageIcon} alt="" src="/image@2x.png" onClick={onCardClick}/>
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
               <b className={styles.nameOfThe}>Salmon Poké Bowl</b>
@@ -168,7 +172,7 @@ const MainPageTablet: FunctionComponent = () => {
           </div>
           <img className={styles.bookmarkIcon} alt="" src="/bookmark.svg" />
         </div>
-        <div className={styles.card1}>
+        <div className={styles.card1} onClick={onCardClick}>
           <img className={styles.imageIcon} alt="" src="/image1@2x.png" />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
@@ -215,12 +219,12 @@ const MainPageTablet: FunctionComponent = () => {
         </div>
       </div>
       <div className={styles.cardGroup}>
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onCardClick}>
           <img className={styles.imageIcon} alt="" src="/image4@2x.png" />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
-              <b className={styles.nameOfThe}>American Pancakes</b>
-              <div className={styles.time}>
+              <b className={styles.nameOfThe}>American Pancakes </b>
+              <div className={styles.time} >
                 <img className={styles.clockIcon} alt="" src="/clock3.svg" />
                 <div className={styles.time1}>30 min</div>
               </div>
@@ -230,7 +234,7 @@ const MainPageTablet: FunctionComponent = () => {
           </div>
           <img className={styles.bookmarkIcon} alt="" src="/bookmark.svg" />
         </div>
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onCardClick}>
           <img className={styles.imageIcon} alt="" src="/image5@2x.png" />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
@@ -245,7 +249,7 @@ const MainPageTablet: FunctionComponent = () => {
           </div>
           <img className={styles.bookmarkIcon} alt="" src="/bookmark1.svg" />
         </div>
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onCardClick}>
           <img className={styles.imageIcon} alt="" src="/image6@2x.png" />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
@@ -260,7 +264,7 @@ const MainPageTablet: FunctionComponent = () => {
           </div>
           <img className={styles.bookmarkIcon} alt="" src="/bookmark2.svg" />
         </div>
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onCardClick}>
           <img className={styles.imageIcon} alt="" src="/image7@2x.png" />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>

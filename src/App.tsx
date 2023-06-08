@@ -49,7 +49,7 @@ function App() {
   path="/profile"
   element={<Profile user={{ name: recipe.creator.name, avatar: recipe.creator.avatar, favoriteRecipes: [] }} />}
 />
-          <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
+          <Route path="/recipe/:id" element={<RecipePage />} />
           <Route path="/upload" element={<RecipeUpload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<SavedPageMobile />} />

@@ -8,6 +8,7 @@ import styles from "./MainPage.module.css";
 
 const MainPage: FunctionComponent = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,7 +21,6 @@ const MainPage: FunctionComponent = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const navigate = useNavigate();
 
   const onFrameContainer2Click = useCallback(() => {
     navigate("/live-feed-mobile");
@@ -28,6 +28,10 @@ const MainPage: FunctionComponent = () => {
 
   const onFrameContainer6Click = useCallback(() => {
     navigate("/profile");
+  }, [navigate]);
+
+  const onCardClick = useCallback(() => {
+    navigate("/recipe/1");
   }, [navigate]);
 
   return (
@@ -160,6 +164,7 @@ const MainPage: FunctionComponent = () => {
                 by="By EatSmart"
                 group3="/group-321.svg"
                 bookmark="/bookmark22.svg"
+                onClick={onCardClick}
               />
               <Card1
                 image="/image30@2x.png"
