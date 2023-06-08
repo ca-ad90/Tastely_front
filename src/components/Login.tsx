@@ -24,6 +24,8 @@ const Login: React.FC = () => {
     console.log("Login submitted:", email, password);
     navigate("/mainpage"); // Navigera till mainpage efter inloggning
 
+    console.log("Login submitted:", email, password);
+
     try {
       const response = await axios.post("http://localhost:8080/login", {
         email,
@@ -33,6 +35,9 @@ const Login: React.FC = () => {
       console.log("User logged in:", response.data);
       setLoginStatus("success");
       navigate("/profile");
+      console.log("User logged in:", response.data);
+      setLoginStatus("success");
+      navigate("/discover");
     } catch (error) {
       console.error("Error logging in:", error);
       setLoginStatus("failure");
@@ -43,6 +48,7 @@ const Login: React.FC = () => {
     {
       navigate("/signup");
     }
+    navigate("/signup");
   };
 
   return (

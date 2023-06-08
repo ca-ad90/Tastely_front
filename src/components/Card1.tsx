@@ -11,9 +11,9 @@ type Card1Type = {
   by?: string;
   group3?: string;
   bookmark?: string;
-
   propJustifyContent?: Property.JustifyContent;
   propDisplay?: Property.Display;
+  onClick?: () => void;
 };
 
 const Card1: FunctionComponent<Card1Type> = ({
@@ -26,6 +26,7 @@ const Card1: FunctionComponent<Card1Type> = ({
   bookmark,
   propJustifyContent,
   propDisplay,
+  onClick, 
 }) => {
   const card1Style: CSS.Properties = useMemo(() => {
     return {
@@ -42,11 +43,10 @@ const Card1: FunctionComponent<Card1Type> = ({
   const navigate = useNavigate();
 
   const onCard1ContainerClick = useCallback(() => {
-    navigate("/recipe/:id");
+    navigate("/recipe/1");
   }, [navigate]);
 
   const onGroupIconClick = useCallback(() => {
-    // Please sync "User Profile / Mobile" to the project
   }, []);
 
   return (

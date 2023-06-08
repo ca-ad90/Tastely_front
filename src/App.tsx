@@ -53,8 +53,7 @@ function App() {
             }
           />
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
-          <Route path="/recipeupload" element={<RecipeUpload />} />
-          <Route path="/upload" element={<Upload />} />
+          <Route path="/upload" element={<RecipeUpload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<SavedPageMobile />} />
           <Route path="/login" element={<Login />} />

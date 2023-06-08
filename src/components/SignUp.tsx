@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./SignUp.css";
 
@@ -34,6 +34,8 @@ const SignUp: React.FC = () => {
 
       console.log("User registered:", response.data);
       navigate("/login");
+
+      window.location.href = "http://localhost:5173/login";
     } catch (error) {
       console.error("Error registering user:", error);
     }
@@ -87,6 +89,12 @@ const SignUp: React.FC = () => {
             Sign up
           </button>
         </form>
+        <p className="login-info">
+          Have an account?{" "}
+          <Link to="/login" className="login-link" onClick={handleLoginClick}>
+            Log in
+          </Link>
+        </p>
       </div>
     </div>
   );

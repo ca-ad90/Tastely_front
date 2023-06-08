@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faPlus } from "@fortawesome/free-solid-svg-icons";
 import "./HamburgerMenu.css";
@@ -7,11 +8,12 @@ import "./HamburgerMenu.css";
 const HamburgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobileSize, setIsMobileSize] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileSize(window.innerWidth <= 768); //
+      setIsMobileSize(window.innerWidth <= 768);
     };
 
     handleResize();
@@ -21,6 +23,20 @@ const HamburgerMenu: React.FC = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  const checkLoggedInStatus = async () => {
+    try {
+      const response = await axios.get('http://localhost:8080/check-login-status');
+      const isLoggedIn = response.data.isLoggedIn;
+      setIsLoggedIn(isLoggedIn);
+    } catch (error) {
+      console.error('Error checking login status:', error);
+    }
+  };
+
+  useEffect(() => {
+    checkLoggedInStatus();
   }, []);
 
   const toggleMenu = () => {
@@ -51,8 +67,19 @@ const HamburgerMenu: React.FC = () => {
     closeMenu();
   };
 
-  const handleLoginLogoutClick = () => {
-    navigate("/login");
+  const handleLoginLogoutClick = async () => {
+    if (isLoggedIn) {
+      try {
+        await axios.post('http://localhost:8080/logout');
+        setIsLoggedIn(false);
+        localStorage.removeItem('token');
+        navigate('/login');
+      } catch (error) {
+        console.error('Error logging out:', error);
+      }
+    } else {
+      navigate('/login');
+    }
     closeMenu();
   };
 
@@ -60,11 +87,15 @@ const HamburgerMenu: React.FC = () => {
     <>
       <div className="hamburger-menu">
         <Link to="/">
-          <h1>Tastely</h1>{" "}
+          <h1>Tastely</h1>
         </Link>
         {isMobileSize && (
           <button className="toggle-button" onClick={toggleMenu}>
-            {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+            {isOpen ? (
+              <FontAwesomeIcon icon={faTimes} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </button>
         )}
 
@@ -91,9 +122,9 @@ const HamburgerMenu: React.FC = () => {
                 <h2>My Profile</h2>
               </button>
             </div>
-            <div className="menu-box-login-logout">
-              <button className="login-logout-button" onClick={handleLoginLogoutClick}>
-                <h2>Login/Logout</h2>
+            <div className="menu-box-login">
+              <button className="login-button" onClick={handleLoginLogoutClick}>
+                <h2>{isLoggedIn ? "Logout" : "Login"}</h2>
               </button>
             </div>
           </div>

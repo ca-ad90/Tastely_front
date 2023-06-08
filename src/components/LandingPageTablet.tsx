@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 import BackgroundMeetOurCreators from "../components/BackgroundMeetOurCreators";
 import styles from "./LandingPageTablet.module.css";
 
@@ -82,7 +83,8 @@ const LandingPageTablet: FunctionComponent = () => {
       <div className={styles.p3SignInButton}>
         <div className={styles.signUpButton}>
           <div className={styles.button2}>
-            <div className={styles.button1}>Log In</div>
+            <div className={styles.button1}>Log In</div> 
+            <Link to="/login"></Link>
           </div>
         </div>
       </div>
@@ -116,7 +118,7 @@ const LandingPageTablet: FunctionComponent = () => {
       <div className={styles.p3SignInButton1}>
         <div className={styles.signUpButton}>
           <div className={styles.button2}>
-            <div className={styles.button1}>Log In</div>
+            <div className={styles.button1}>Log In</div><Link to="/login"></Link>
           </div>
         </div>
       </div>
