@@ -6,7 +6,6 @@ type Section1LandingPage1Type = {
   h3SeamlessSharing?: string;
   easilyShareYourFavoriteRe?: string;
 
-  /** Style props */
   propBackgroundColor?: Property.BackgroundColor;
   propWidth?: Property.Width;
   propAlignItems?: Property.AlignItems;
@@ -42,30 +41,18 @@ const Section1LandingPage1: FunctionComponent<Section1LandingPage1Type> = ({
   }, [propAlignItems, propJustifyContent]);
 
   return (
-    <div className="flex flex-col items-center justify-start relative gap-[20px] text-left text-3xl text-neutrals-neutral-black font-h1">
+    <div className="relative flex flex-col items-center justify-start gap-[20px] text-left font-h1 text-3xl text-neutrals-neutral-black">
       <div
-        className="absolute my-0 mx-[!important] top-[0px] left-[0.12px] rounded-[13.47px] bg-darkorange-100 w-[270.23px] h-[262px] z-[0]"
+        className="absolute left-[0.12px] top-[0px] z-[0] mx-[!important] my-0 h-[262px] w-[270.23px] rounded-[13.47px] bg-darkorange-100"
         style={rectangleDiv1Style}
       />
-      <img
-        className="relative rounded-sm-5 w-[270.23px] h-[262px] object-cover z-[1]"
-        alt=""
-        src={image3}
-      />
-      <div
-        className="flex flex-col items-start justify-start gap-[7px] z-[2]"
-        style={frameDiv4Style}
-      >
-        <div
-          className="flex flex-row items-center justify-center"
-          style={h3Style}
-        >
+      <img className="relative z-[1] h-[262px] w-[270.23px] rounded-sm-5 object-cover" alt="" src={image3} />
+      <div className="z-[2] flex flex-col items-start justify-start gap-[7px]" style={frameDiv4Style}>
+        <div className="flex flex-row items-center justify-center" style={h3Style}>
           <b className="relative leading-[28px]">{h3SeamlessSharing}</b>
         </div>
-        <div className="flex flex-col pt-[5px] px-0 pb-0 items-center justify-center text-base font-p1">
-          <div className="relative leading-[20px] inline-block w-[270px]">
-            {easilyShareYourFavoriteRe}
-          </div>
+        <div className="flex flex-col items-center justify-center px-0 pb-0 pt-[5px] font-p1 text-base">
+          <div className="relative inline-block w-[270px] leading-[20px]">{easilyShareYourFavoriteRe}</div>
         </div>
       </div>
     </div>

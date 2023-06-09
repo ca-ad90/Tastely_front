@@ -23,8 +23,6 @@ const SignUp: React.FC = () => {
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const navigate = useNavigate();
-
     try {
       const response = await axios.post("http://localhost:8080/register", {
         name,
@@ -33,12 +31,17 @@ const SignUp: React.FC = () => {
       });
 
       console.log("User registered:", response.data);
-      navigate("/login");
 
       window.location.href = "http://localhost:5173/login";
     } catch (error) {
       console.error("Error registering user:", error);
     }
+  };
+
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/login");
   };
 
   return (

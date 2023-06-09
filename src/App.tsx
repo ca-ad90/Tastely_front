@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import "./index.css";
@@ -21,6 +22,37 @@ import MainPageTablet from "./components/MainPageTablet";
 import RecipePage from "./components/RecipePage";
 
 function App() {
+  const [file, setFile] = useState(null);
+  const [uploadedFile, setUploadedFile] = useState(null);
+
+  const fileSelectedHandler = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const fileUploadHandler = async () => {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const res = await axios.post("http://localhost:8080/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      const { fileName, filePath } = res.data;
+      setUploadedFile({ fileName, filePath });
+    } catch (err) {
+      if (err.response && err.response.status === 500) {
+        console.log("There was a problem with the server");
+      } else if (err.response && err.response.data && err.response.data.msg) {
+        console.log(err.response.data.msg);
+      } else {
+        console.log("An error occurred while uploading the file");
+      }
+    }
+  };
+
   const [count, setCount] = useState(0);
 
   const recipe = {
@@ -54,6 +86,7 @@ function App() {
           />
           <Route path="/recipe/:id" element={<RecipePage recipe={recipe} />} />
           <Route path="/upload" element={<RecipeUpload />} />
+          <Route path="/upload" element={<Upload />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/saved" element={<SavedPageMobile />} />
           <Route path="/login" element={<Login />} />
@@ -71,20 +104,19 @@ function App() {
         </div>
 
         <Link to="/login" className="login-link"></Link>
-        {/* <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
-            <img src="/vite.svg" className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>*/}
+        <h1 className="App-header">File upload</h1>
+        <section>
+          <input className="App-input" type="file" onChange={fileSelectedHandler} />
+          <button className="App-button" onClick={fileUploadHandler}>
+            Upload
+          </button>
+        </section>
+        {uploadedFile && (
+          <div className="upload">
+            <h3 className="upload_header">{uploadedFile.fileName}</h3>
+            <img className="upload_image" src={uploadedFile.filePath} alt="logo" />
+          </div>
+        )}
         <p className="read-the-docs">Click on the Vite and React logos to learn more.</p>
       </div>
     </Router>

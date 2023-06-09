@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import HamburgerMenu from "../components/HamburgerMenu";
+import Upload from "../components/Upload";
 
 const RecipeUpload: React.FC = () => {
   const [name, setName] = useState("");
@@ -56,6 +57,7 @@ const RecipeUpload: React.FC = () => {
         </div>
         <button type="submit">Upload</button>
       </form>
+      <Upload />
     </div>
   );
 };

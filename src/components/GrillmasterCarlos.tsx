@@ -6,8 +6,6 @@ type GrillmasterCarlosType = {
   pexelsPhotoByRDNEStockPro?: string;
   grillMasterCarlos?: string;
   fireUpThoseGrillsWithGril?: string;
-
-  /** Style props */
   propBoxShadow?: Property.BoxShadow;
 };
 

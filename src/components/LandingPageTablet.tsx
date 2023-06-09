@@ -25,7 +25,9 @@ const LandingPageTablet: FunctionComponent = () => {
       </div>
       <div className={styles.registerButton}>
         <div className={styles.button}>
-          <div className={styles.button1}>Sign Up</div>
+          <Link to="/signup" className={styles.button}>
+            <div className={styles.button1}>Sign Up</div>
+          </Link>
         </div>
       </div>
       <div className={styles.p2}>Join 27546 chefs, creators and foodies!</div>
@@ -83,8 +85,9 @@ const LandingPageTablet: FunctionComponent = () => {
       <div className={styles.p3SignInButton}>
         <div className={styles.signUpButton}>
           <div className={styles.button2}>
-            <div className={styles.button1}>Log In</div> 
-            <Link to="/login"></Link>
+            <Link to="/login" className={styles.button1}>
+              <div className={styles.button4}>Log In</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -112,13 +115,17 @@ const LandingPageTablet: FunctionComponent = () => {
       </div>
       <div className={styles.registerButton1}>
         <div className={styles.button}>
-          <div className={styles.button1}>Sign Up</div>
+          <Link to="/signup" className={styles.button}>
+            <div className={styles.button1}>Sign Up</div>
+          </Link>
         </div>
       </div>
       <div className={styles.p3SignInButton1}>
         <div className={styles.signUpButton}>
           <div className={styles.button2}>
-            <div className={styles.button1}>Log In</div><Link to="/login"></Link>
+            <Link to="/login" className={styles.button1}>
+              <div className={styles.button4}>Log In</div>
+            </Link>
           </div>
         </div>
       </div>
