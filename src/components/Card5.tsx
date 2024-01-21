@@ -13,7 +13,7 @@ const Card5: FunctionComponent<Card5Type> = ({ image, clock, group3, bookmark })
   const navigate = useNavigate();
 
   const onCard5ContainerClick = useCallback(() => {
-    navigate("/recipe/:id");
+    navigate("/recipes/:id");
   }, [navigate]);
 
   return (

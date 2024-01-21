@@ -26,7 +26,7 @@ const Card1: FunctionComponent<Card1Type> = ({
   bookmark,
   propJustifyContent,
   propDisplay,
-  onClick, 
+  onClick,
 }) => {
   const card1Style: CSS.Properties = useMemo(() => {
     return {
@@ -43,11 +43,10 @@ const Card1: FunctionComponent<Card1Type> = ({
   const navigate = useNavigate();
 
   const onCard1ContainerClick = useCallback(() => {
-    navigate("/recipe/1");
+    navigate("/recipes/1");
   }, [navigate]);
 
-  const onGroupIconClick = useCallback(() => {
-  }, []);
+  const onGroupIconClick = useCallback(() => {}, []);
 
   return (
     <div className={styles.card1} onClick={onCard1ContainerClick} style={card1Style}>

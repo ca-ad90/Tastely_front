@@ -31,7 +31,7 @@ const MainPage: FunctionComponent = () => {
   }, [navigate]);
 
   const onCardClick = useCallback(() => {
-    navigate("/recipe/1");
+    navigate("/recipes/1");
   }, [navigate]);
 
   return (

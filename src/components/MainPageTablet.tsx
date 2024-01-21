@@ -14,7 +14,7 @@ const MainPageTablet: FunctionComponent = () => {
   }, [navigate]);
 
   const onCardClick = useCallback(() => {
-    navigate("/recipe/1");
+    navigate("/recipes/1");
   }, [navigate]);
 
   return (
@@ -158,7 +158,7 @@ const MainPageTablet: FunctionComponent = () => {
       </div>
       <div className={styles.cardParent} onClick={onCardClick}>
         <div className={styles.card} onClick={onCardClick}>
-          <img className={styles.imageIcon} alt="" src="/image@2x.png" onClick={onCardClick}/>
+          <img className={styles.imageIcon} alt="" src="/image@2x.png" onClick={onCardClick} />
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
               <b className={styles.nameOfThe}>Salmon Poké Bowl</b>
@@ -224,7 +224,7 @@ const MainPageTablet: FunctionComponent = () => {
           <div className={styles.cardDetails}>
             <div className={styles.heading}>
               <b className={styles.nameOfThe}>American Pancakes </b>
-              <div className={styles.time} >
+              <div className={styles.time}>
                 <img className={styles.clockIcon} alt="" src="/clock3.svg" />
                 <div className={styles.time1}>30 min</div>
               </div>

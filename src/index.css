@@ -15,10 +15,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.App {
-  width: 100%;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -76,6 +72,12 @@ button:focus-visible {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@font-face {
+  font-family: "Roboto";
+  src:
+    local(""),
+    url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap")
+}
 @font-face {
   font-family: "Chillax";
   src: url("/public/Chillax-Regular.otf");

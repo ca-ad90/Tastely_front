@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./SignUp.css";
+import TextInput from "./From/input";
 
 const SignUp: React.FC = () => {
-  const [name, setName] = useState("");
+  const [username, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [inpVal, setInpVal] = useState("");
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
@@ -24,8 +26,8 @@ const SignUp: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/register", {
-        name,
+      const response = await axios.post("http://localhost:8080/auth/signup", {
+        username,
         email,
         password,
       });
@@ -58,16 +60,24 @@ const SignUp: React.FC = () => {
           <button className="social-button" onClick={() => console.log("Signing up with Apple")}>
             Sign up with Apple
           </button>
+
         </div>
       </div>
       <div className="signup-card">
         <h2 className="signup-title">Register</h2>
         <form className="signup-form" onSubmit={handleFormSubmit}>
           <div className="form-group">
-            <label htmlFor="name" className="form-label">
+            <label htmlFor="username" className="form-label">
               Name
             </label>
-            <input type="text" id="name" className="form-input" value={name} onChange={handleNameChange} required />
+            <input
+              type="text"
+              id="username"
+              className="form-input"
+              value={username}
+              onChange={handleNameChange}
+              required
+            />
           </div>
           <div className="form-group">
             <label htmlFor="email" className="form-label">

@@ -1,23 +1,31 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100vw;
 }
 
-div.App {
-  width: 100%;
+header {
+  grid-column: span 12;
+  display:flex;
+  justify-content:center;
 }
 
+main {
+  grid-column: 2/-2;
+}
 
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -26,6 +34,7 @@ div.App {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -55,6 +64,7 @@ div.App {
   height: 40px;
   border-radius: 50%;
 }
+
 .top-links img.small-avatar {
   display: none;
 }

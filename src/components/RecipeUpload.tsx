@@ -20,7 +20,7 @@ const RecipeUpload: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/recipe", {
+      const response = await axios.post("http://localhost:8080/recipes", {
         name,
         description,
         ingredients: ingredients.split("\n"),
@@ -28,7 +28,7 @@ const RecipeUpload: React.FC = () => {
       });
 
       const createdRecipeId = response.data.id;
-      navigate(`/recipe/${createdRecipeId}`);
+      navigate(`/recipes/${createdRecipeId}`);
     } catch (error) {
       console.error(error);
     }

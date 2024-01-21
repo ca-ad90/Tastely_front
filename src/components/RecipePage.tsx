@@ -28,7 +28,7 @@ function RecipePage() {
   const fetchRecipe = async () => {
     try {
       const recipeId = getRecipeIdFromUrl();
-      const response = await fetch(`http://localhost:8080/recipe/${recipeId}`);
+      const response = await fetch(`http://localhost:8080/recipes/${recipeId}`);
       if (response.ok) {
         const data = await response.json();
         setRecipe(data);
@@ -53,7 +53,7 @@ function RecipePage() {
       setError(true);
     } else {
       setError(false);
-      navigate(`/recipe/${id}`);
+      navigate(`/recipes/${id}`);
       setSearchId("");
       fetchRecipe();
     }
